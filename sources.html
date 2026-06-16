@@ -4,282 +4,265 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH0WN47NP2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-NH0WN47NP2');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NH0WN47NP2');
 </script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geography Sources — Mrs Perkins Geography</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
-  .sources-intro{background:white;border-left:4px solid var(--teal-mid);border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:14px;color:#2a3f4a;line-height:1.7;}
-  .filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2rem;}
-  .filter-btn{padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(84,172,185,0.3);background:white;color:var(--teal-dark);transition:all 0.2s;}
-  .filter-btn:hover,.filter-btn.active{background:var(--navy);color:white;border-color:var(--navy);}
-  .sources-section{margin-bottom:2.5rem;}
-  .sources-section-header{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem;padding-bottom:8px;border-bottom:1px solid rgba(84,172,185,0.2);}
-  .sources-section-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);}
-  .sources-count{font-size:11px;font-weight:600;color:var(--teal-mid);background:rgba(84,172,185,0.1);padding:3px 10px;border-radius:12px;}
-  .source-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;}
-  .source-card{background:white;border-radius:10px;border:1px solid rgba(84,172,185,0.2);padding:1rem 1.1rem;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:6px;transition:border-color 0.2s,box-shadow 0.2s;}
-  .source-card:hover{border-color:var(--teal-mid);box-shadow:0 2px 10px rgba(0,49,70,0.08);}
-  .source-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px;}
-  .source-name{font-size:14px;font-weight:600;color:var(--navy);}
-  .source-free{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;background:rgba(63,126,68,0.12);color:#3F7E44;border:1px solid rgba(63,126,68,0.25);white-space:nowrap;}
-  .source-origin{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;background:rgba(84,172,185,0.1);color:var(--teal-dark);white-space:nowrap;}
-  .source-desc{font-size:13px;color:#4a6270;line-height:1.6;}
-  .source-tags{display:flex;flex-wrap:wrap;gap:5px;}
-  .source-tag{font-size:10px;font-weight:600;padding:2px 7px;border-radius:10px;background:rgba(0,49,70,0.06);color:var(--navy);}
-  .tip-box{background:var(--navy);border-radius:12px;padding:1.5rem;margin-bottom:2rem;}
-  .tip-box-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:white;margin-bottom:8px;}
-  .tip-box-text{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.7;}
-  .tip-box-text strong{color:var(--amber);}
+.sources-intro{background:white;border-left:4px solid var(--teal-mid);border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:14px;color:#2a3f4a;line-height:1.7;}
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2rem;}
+.filter-btn{padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(84,172,185,0.3);background:white;color:var(--teal-dark);transition:all 0.2s;}
+.filter-btn:hover,.filter-btn.active{background:var(--navy);color:white;border-color:var(--navy);}
+.sources-section{margin-bottom:2.5rem;}
+.sources-section-header{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem;padding-bottom:8px;border-bottom:1px solid rgba(84,172,185,0.2);}
+.sources-section-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);}
+.sources-count{font-size:11px;font-weight:600;color:var(--teal-mid);background:rgba(84,172,185,0.1);padding:3px 10px;border-radius:12px;}
+.source-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;}
+.source-card{background:white;border-radius:10px;border:1px solid rgba(84,172,185,0.2);padding:1rem 1.1rem;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:6px;transition:border-color 0.2s,box-shadow 0.2s;}
+.source-card:hover{border-color:var(--teal-mid);box-shadow:0 2px 10px rgba(0,49,70,0.08);}
+.source-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.source-name{font-size:14px;font-weight:600;color:var(--navy);}
+.source-free{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;background:rgba(63,126,68,0.12);color:#3F7E44;border:1px solid rgba(63,126,68,0.25);white-space:nowrap;}
+.source-origin{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;background:rgba(84,172,185,0.1);color:var(--teal-dark);white-space:nowrap;}
+.source-desc{font-size:13px;color:#4a6270;line-height:1.6;}
+.source-tags{display:flex;flex-wrap:wrap;gap:5px;}
+.source-tag{font-size:10px;font-weight:600;padding:2px 7px;border-radius:10px;background:rgba(0,49,70,0.06);color:var(--navy);}
+.tip-box{background:var(--navy);border-radius:12px;padding:1.5rem;margin-bottom:2rem;}
+.tip-box-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:white;margin-bottom:8px;}
+.tip-box-text{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.7;}
+.tip-box-text strong{color:var(--amber);}
 </style>
 </head>
 <body>
 <nav>
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
-    <ul class="nav-links">
-      <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
-      <li><a href="elective.html">Stage 5 Elective 2027</a></li>
-      <li><a href="stage6.html">Stage 6</a></li>
-      <li><a href="syllabus.html">Syllabus</a></li>
-      <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="fun.html">Geography Fun</a></li>
-      <li><a href="journey.html">Your Journey</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="nav-accent"></div>
-  <div class="nav-mobile" id="mobileNav">
-    <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
-    <a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="syllabus.html">Syllabus</a><a href="sdgs.html">SDGs</a><a href="videos.html">Videos</a><a href="fun.html">Geography Fun</a><a href="journey.html">Your Journey</a><a href="contact.html">Contact</a>
-  </div>
+<div class="nav-inner">
+<a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
+<ul class="nav-links">
+<li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
+<li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
+<li><a href="videos.html">Videos</a></li>
+</ul>
+<button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+<div class="nav-accent"></div>
+<div class="nav-mobile" id="mobileNav">
+<a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
+<a href="sdgs.html">SDGs</a><a href="videos.html">Videos</a><a href="sources.html">Sources</a><a class="mobile-sub" href="thisweek.html">This Week in Geography</a><a class="mobile-sub" href="sources.html">Geography Sources</a>
+</div>
 </nav>
-
 <div class="page-hero">
-  <div class="page-eyebrow">Research · Current affairs · Case studies</div>
-  <h1 class="page-title">Geography <em>Sources</em></h1>
-  <p class="page-lead">Reliable, free sources for current geography news, research and case studies - all clickable, no paywall.</p>
+<div class="page-eyebrow">Research · Current affairs · Case studies</div>
+<h1 class="page-title">Geography <em>Sources</em></h1>
+<p class="page-lead">Reliable, free sources for current geography news, research and case studies - all clickable, no paywall.</p>
 </div>
 <div class="page-accent"></div>
-
 <div class="main">
-
-  <div class="sources-intro">
-    Every source on this page is <strong>free to read and student-friendly.</strong> Use these when you need a current example for an assessment, want to find a case study nobody else will use, or just want to understand what's happening in the world through a geography lens. Mrs Perkins uses these to find stories for <a href="thisweek.html" style="color:var(--teal-mid);font-weight:600;">This Week in Geography</a>.
-  </div>
-
-  <div class="tip-box">
-    <div class="tip-box-title">How to find a good case study</div>
-    <div class="tip-box-text">Search the source's website for your topic - e.g. <strong>"coral bleaching"</strong> or <strong>"food security Australia"</strong> or <strong>"South China Sea."</strong> Look for articles from the last 2-3 years. The best case studies are specific - a named place, a real event, with data. Avoid articles that are just opinion with no evidence.</div>
-  </div>
-
-  <!-- CLIMATE AND ENVIRONMENT -->
-  <div class="sources-section">
-    <div class="sources-section-header">
-      <div class="sources-section-title">Climate and Environment</div>
-      <span class="sources-count">7 sources</span>
-    </div>
-    <div class="source-grid">
-      <a class="source-card" href="https://www.abc.net.au/news/environment" target="_blank">
-        <div class="source-card-top"><span class="source-name">ABC Environment</span><span class="source-origin">Australian</span></div>
-        <div class="source-desc">Australia's national broadcaster - excellent free coverage of climate, bushfire, drought, reef and environmental policy.</div>
-        <div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Australia</span><span class="source-tag">Policy</span></div>
-      </a>
-      <a class="source-card" href="https://theconversation.com/topics/environment-3387" target="_blank">
-        <div class="source-card-top"><span class="source-name">The Conversation - Environment</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Academic researchers writing for a general audience. Rigorous, well-sourced and perfectly pitched for senior students. Australian focus.</div>
-        <div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Research</span><span class="source-tag">Australia</span></div>
-      </a>
-      <a class="source-card" href="https://www.theguardian.com/environment" target="_blank">
-        <div class="source-card-top"><span class="source-name">The Guardian - Environment</span><span class="source-free">Free</span></div>
-        <div class="source-desc">World-class environmental journalism - climate science, biodiversity loss, pollution and sustainability. Global perspective.</div>
-        <div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Global</span><span class="source-tag">Biodiversity</span></div>
-      </a>
-      <a class="source-card" href="https://earthobservatory.nasa.gov" target="_blank">
-        <div class="source-card-top"><span class="source-name">NASA Earth Observatory</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Satellite imagery and data showing environmental change from space. Stunning visuals. Perfect for physical geography case studies.</div>
-        <div class="source-tags"><span class="source-tag">Physical</span><span class="source-tag">Satellite</span><span class="source-tag">Climate</span></div>
-      </a>
-      <a class="source-card" href="https://www.nationalgeographic.com/environment" target="_blank">
-        <div class="source-card-top"><span class="source-name">National Geographic - Environment</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Beautifully presented environmental stories with world-class photography. Great for engaging case studies.</div>
-        <div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Biodiversity</span><span class="source-tag">Visual</span></div>
-      </a>
-      <a class="source-card" href="https://www.australiangeographic.com.au" target="_blank">
-        <div class="source-card-top"><span class="source-name">Australian Geographic</span><span class="source-origin">Australian</span></div>
-        <div class="source-desc">Australia's natural environment, wildlife and geography told through stunning photography and accessible writing.</div>
-        <div class="source-tags"><span class="source-tag">Australia</span><span class="source-tag">Environment</span><span class="source-tag">Wildlife</span></div>
-      </a>
-      <a class="source-card" href="https://www.sciencedaily.com/news/earth_climate/" target="_blank">
-        <div class="source-card-top"><span class="source-name">ScienceDaily - Earth and Climate</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Breaking science news from universities and research institutes worldwide. Good for finding the latest research findings.</div>
-        <div class="source-tags"><span class="source-tag">Research</span><span class="source-tag">Climate</span><span class="source-tag">Physical</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- GEOPOLITICS AND WORLD AFFAIRS -->
-  <div class="sources-section">
-    <div class="sources-section-header">
-      <div class="sources-section-title">Geopolitics and World Affairs</div>
-      <span class="sources-count">5 sources</span>
-    </div>
-    <div class="source-grid">
-      <a class="source-card" href="https://theconversation.com/au/search?q=world+geography" target="_blank">
-        <div class="source-card-top"><span class="source-name">The Conversation - World</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Academic analysis of global events - conflicts, elections, borders, power and diplomacy. Written by experts, free to read.</div>
-        <div class="source-tags"><span class="source-tag">Geopolitics</span><span class="source-tag">Analysis</span><span class="source-tag">Global</span></div>
-      </a>
-      <a class="source-card" href="https://www.bbc.com/news/world" target="_blank">
-        <div class="source-card-top"><span class="source-name">BBC World News</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Trusted international reporting on global affairs. Balanced, comprehensive and always free to read.</div>
-        <div class="source-tags"><span class="source-tag">Geopolitics</span><span class="source-tag">Current affairs</span><span class="source-tag">Global</span></div>
-      </a>
-      <a class="source-card" href="https://www.theguardian.com/world" target="_blank">
-        <div class="source-card-top"><span class="source-name">The Guardian - World</span><span class="source-free">Free</span></div>
-        <div class="source-desc">In-depth global news coverage with strong investigative journalism on power, conflict and inequality.</div>
-        <div class="source-tags"><span class="source-tag">Geopolitics</span><span class="source-tag">Inequality</span><span class="source-tag">Conflict</span></div>
-      </a>
-      <a class="source-card" href="https://news.un.org" target="_blank">
-        <div class="source-card-top"><span class="source-name">UN News</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Official United Nations news - SDG progress, humanitarian crises, global agreements and peacekeeping. Directly links to SDGs.</div>
-        <div class="source-tags"><span class="source-tag">SDGs</span><span class="source-tag">Humanitarian</span><span class="source-tag">Global</span></div>
-      </a>
-      <a class="source-card" href="https://theconversation.com/au" target="_blank">
-        <div class="source-card-top"><span class="source-name">The Conversation - Australia</span><span class="source-origin">Australian</span></div>
-        <div class="source-desc">Australian academics writing on politics, foreign policy and Australia's role in the Indo-Pacific. Excellent for Australia's Neighbours unit.</div>
-        <div class="source-tags"><span class="source-tag">Australia</span><span class="source-tag">Indo-Pacific</span><span class="source-tag">Policy</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- OCEANS AND PHYSICAL GEOGRAPHY -->
-  <div class="sources-section">
-    <div class="sources-section-header">
-      <div class="sources-section-title">Oceans and Physical Geography</div>
-      <span class="sources-count">4 sources</span>
-    </div>
-    <div class="source-grid">
-      <a class="source-card" href="https://oceanservice.noaa.gov/news/" target="_blank">
-        <div class="source-card-top"><span class="source-name">NOAA Ocean Service</span><span class="source-free">Free</span></div>
-        <div class="source-desc">US National Oceanic and Atmospheric Administration - ocean data, sea level rise, coral reefs and marine ecosystems. Authoritative.</div>
-        <div class="source-tags"><span class="source-tag">Oceans</span><span class="source-tag">Data</span><span class="source-tag">Physical</span></div>
-      </a>
-      <a class="source-card" href="https://www.nationalgeographic.com/animals/topic/ocean" target="_blank">
-        <div class="source-card-top"><span class="source-name">National Geographic - Oceans</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Ocean ecosystems, marine biodiversity, plastic pollution and coral bleaching - visually stunning and student-friendly.</div>
-        <div class="source-tags"><span class="source-tag">Oceans</span><span class="source-tag">Ecosystems</span><span class="source-tag">Visual</span></div>
-      </a>
-      <a class="source-card" href="https://www.geographyrealm.com" target="_blank">
-        <div class="source-card-top"><span class="source-name">Geography Realm</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Physical and human geography explainers and current stories. Good for building background knowledge on any topic.</div>
-        <div class="source-tags"><span class="source-tag">Physical</span><span class="source-tag">Human</span><span class="source-tag">Explainers</span></div>
-      </a>
-      <a class="source-card" href="https://www.aims.gov.au/research-topics/marine-life" target="_blank">
-        <div class="source-card-top"><span class="source-name">AIMS - Great Barrier Reef</span><span class="source-origin">Australian</span></div>
-        <div class="source-desc">Australian Institute of Marine Science - live reef monitoring data and annual condition reports. Perfect for Oceanography case studies.</div>
-        <div class="source-tags"><span class="source-tag">Reef</span><span class="source-tag">Data</span><span class="source-tag">Australia</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- FOOD AND PRIMARY PRODUCTION -->
-  <div class="sources-section">
-    <div class="sources-section-header">
-      <div class="sources-section-title">Food and Primary Production</div>
-      <span class="sources-count">4 sources</span>
-    </div>
-    <div class="source-grid">
-      <a class="source-card" href="https://www.abc.net.au/news/rural" target="_blank">
-        <div class="source-card-top"><span class="source-name">ABC Rural</span><span class="source-origin">Australian</span></div>
-        <div class="source-desc">Australian agriculture, drought, farming communities and food production. Excellent Australian case studies for Primary Production.</div>
-        <div class="source-tags"><span class="source-tag">Agriculture</span><span class="source-tag">Australia</span><span class="source-tag">Rural</span></div>
-      </a>
-      <a class="source-card" href="https://www.fao.org/home/en/" target="_blank">
-        <div class="source-card-top"><span class="source-name">FAO News</span><span class="source-free">Free</span></div>
-        <div class="source-desc">UN Food and Agriculture Organisation - global food security, hunger data and sustainable agriculture. Directly links to SDG 2.</div>
-        <div class="source-tags"><span class="source-tag">Food security</span><span class="source-tag">SDG 2</span><span class="source-tag">Global</span></div>
-      </a>
-      <a class="source-card" href="https://ourworldindata.org/" target="_blank">
-        <div class="source-card-top"><span class="source-name">Our World in Data - Food</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Data visualisations on global food production, land use, water use and agricultural change. Excellent for statistics in responses.</div>
-        <div class="source-tags"><span class="source-tag">Data</span><span class="source-tag">Agriculture</span><span class="source-tag">Statistics</span></div>
-      </a>
-      <a class="source-card" href="https://theconversation.com/topics/agriculture-24" target="_blank">
-        <div class="source-card-top"><span class="source-name">The Conversation - Agriculture</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Academic analysis of farming, food systems and land use - Australian and global perspectives, all free to read.</div>
-        <div class="source-tags"><span class="source-tag">Agriculture</span><span class="source-tag">Research</span><span class="source-tag">Australia</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- DEVELOPMENT AND INEQUALITY -->
-  <div class="sources-section">
-    <div class="sources-section-header">
-      <div class="sources-section-title">Development, Inequality and Global Citizenship</div>
-      <span class="sources-count">4 sources</span>
-    </div>
-    <div class="source-grid">
-      <a class="source-card" href="https://ourworldindata.org" target="_blank">
-        <div class="source-card-top"><span class="source-name">Our World in Data</span><span class="source-free">Free</span></div>
-        <div class="source-desc">The best free data site on the planet. Statistics on every SDG, every country, every global trend. Essential for any assessment response.</div>
-        <div class="source-tags"><span class="source-tag">Data</span><span class="source-tag">SDGs</span><span class="source-tag">All topics</span></div>
-      </a>
-      <a class="source-card" href="https://www.theguardian.com/global-development" target="_blank">
-        <div class="source-card-top"><span class="source-name">The Guardian - Global Development</span><span class="source-free">Free</span></div>
-        <div class="source-desc">In-depth journalism on poverty, inequality, aid, development and human rights across the developing world.</div>
-        <div class="source-tags"><span class="source-tag">Development</span><span class="source-tag">Inequality</span><span class="source-tag">SDGs</span></div>
-      </a>
-      <a class="source-card" href="https://theconversation.com/topics/inequality-829" target="_blank">
-        <div class="source-card-top"><span class="source-name">The Conversation - Inequality</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Academic research on inequality within and between countries - wealth gaps, access to education, health and opportunity.</div>
-        <div class="source-tags"><span class="source-tag">Inequality</span><span class="source-tag">SDG 10</span><span class="source-tag">Research</span></div>
-      </a>
-      <a class="source-card" href="https://dashboards.sdgindex.org" target="_blank">
-        <div class="source-card-top"><span class="source-name">SDG Index Dashboard</span><span class="source-free">Free</span></div>
-        <div class="source-desc">See how every country in the world is tracking on every SDG. Find Australia and compare with neighbours - perfect for assessments.</div>
-        <div class="source-tags"><span class="source-tag">SDGs</span><span class="source-tag">Data</span><span class="source-tag">Global</span></div>
-      </a>
-    </div>
-  </div>
-
-  <!-- MAPS AND SPATIAL -->
-  <div class="sources-section">
-    <div class="sources-section-header">
-      <div class="sources-section-title">Maps, Spatial and Visual Geography</div>
-      <span class="sources-count">4 sources</span>
-    </div>
-    <div class="source-grid">
-      <a class="source-card" href="https://www.brilliantmaps.com" target="_blank">
-        <div class="source-card-top"><span class="source-name">Brilliant Maps</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Fascinating maps showing everything from population density to language distribution to food consumption. Endlessly interesting.</div>
-        <div class="source-tags"><span class="source-tag">Maps</span><span class="source-tag">Visual</span><span class="source-tag">All topics</span></div>
-      </a>
-      <a class="source-card" href="https://www.thetruesize.com" target="_blank">
-        <div class="source-card-top"><span class="source-name">The True Size Of...</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Interactive map showing the real size of countries. Africa is enormous. Great for understanding map projections and spatial distortion.</div>
-        <div class="source-tags"><span class="source-tag">Maps</span><span class="source-tag">Interactive</span><span class="source-tag">Skills</span></div>
-      </a>
-      <a class="source-card" href="https://earth.google.com/web/" target="_blank">
-        <div class="source-card-top"><span class="source-name">Google Earth Web</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Fly anywhere on Earth in 3D. Use historical imagery to see how places have changed. Essential spatial technology tool.</div>
-        <div class="source-tags"><span class="source-tag">Spatial</span><span class="source-tag">Physical</span><span class="source-tag">Skills</span></div>
-      </a>
-      <a class="source-card" href="https://www.windy.com" target="_blank">
-        <div class="source-card-top"><span class="source-name">Windy</span><span class="source-free">Free</span></div>
-        <div class="source-desc">Live animated map of global wind, rain, temperature and ocean currents. Perfect for understanding atmospheric and ocean systems.</div>
-        <div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Oceans</span><span class="source-tag">Live data</span></div>
-      </a>
-    </div>
-  </div>
-
+<div class="sources-intro">
+Every source on this page is <strong>free to read and student-friendly.</strong> Use these when you need a current example for an assessment, want to find a case study nobody else will use, or just want to understand what's happening in the world through a geography lens. Mrs Perkins uses these to find stories for <a href="thisweek.html" style="color:var(--teal-mid);font-weight:600;">This Week in Geography</a>.
+</div>
+<div class="tip-box">
+<div class="tip-box-title">How to find a good case study</div>
+<div class="tip-box-text">Search the source's website for your topic - e.g. <strong>"coral bleaching"</strong> or <strong>"food security Australia"</strong> or <strong>"South China Sea."</strong> Look for articles from the last 2-3 years. The best case studies are specific - a named place, a real event, with data. Avoid articles that are just opinion with no evidence.</div>
+</div>
+<!-- CLIMATE AND ENVIRONMENT -->
+<div class="sources-section">
+<div class="sources-section-header">
+<div class="sources-section-title">Climate and Environment</div>
+<span class="sources-count">7 sources</span>
+</div>
+<div class="source-grid">
+<a class="source-card" href="https://www.abc.net.au/news/environment" target="_blank">
+<div class="source-card-top"><span class="source-name">ABC Environment</span><span class="source-origin">Australian</span></div>
+<div class="source-desc">Australia's national broadcaster - excellent free coverage of climate, bushfire, drought, reef and environmental policy.</div>
+<div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Australia</span><span class="source-tag">Policy</span></div>
+</a>
+<a class="source-card" href="https://theconversation.com/topics/environment-3387" target="_blank">
+<div class="source-card-top"><span class="source-name">The Conversation - Environment</span><span class="source-free">Free</span></div>
+<div class="source-desc">Academic researchers writing for a general audience. Rigorous, well-sourced and perfectly pitched for senior students. Australian focus.</div>
+<div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Research</span><span class="source-tag">Australia</span></div>
+</a>
+<a class="source-card" href="https://www.theguardian.com/environment" target="_blank">
+<div class="source-card-top"><span class="source-name">The Guardian - Environment</span><span class="source-free">Free</span></div>
+<div class="source-desc">World-class environmental journalism - climate science, biodiversity loss, pollution and sustainability. Global perspective.</div>
+<div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Global</span><span class="source-tag">Biodiversity</span></div>
+</a>
+<a class="source-card" href="https://earthobservatory.nasa.gov" target="_blank">
+<div class="source-card-top"><span class="source-name">NASA Earth Observatory</span><span class="source-free">Free</span></div>
+<div class="source-desc">Satellite imagery and data showing environmental change from space. Stunning visuals. Perfect for physical geography case studies.</div>
+<div class="source-tags"><span class="source-tag">Physical</span><span class="source-tag">Satellite</span><span class="source-tag">Climate</span></div>
+</a>
+<a class="source-card" href="https://www.nationalgeographic.com/environment" target="_blank">
+<div class="source-card-top"><span class="source-name">National Geographic - Environment</span><span class="source-free">Free</span></div>
+<div class="source-desc">Beautifully presented environmental stories with world-class photography. Great for engaging case studies.</div>
+<div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Biodiversity</span><span class="source-tag">Visual</span></div>
+</a>
+<a class="source-card" href="https://www.australiangeographic.com.au" target="_blank">
+<div class="source-card-top"><span class="source-name">Australian Geographic</span><span class="source-origin">Australian</span></div>
+<div class="source-desc">Australia's natural environment, wildlife and geography told through stunning photography and accessible writing.</div>
+<div class="source-tags"><span class="source-tag">Australia</span><span class="source-tag">Environment</span><span class="source-tag">Wildlife</span></div>
+</a>
+<a class="source-card" href="https://www.sciencedaily.com/news/earth_climate/" target="_blank">
+<div class="source-card-top"><span class="source-name">ScienceDaily - Earth and Climate</span><span class="source-free">Free</span></div>
+<div class="source-desc">Breaking science news from universities and research institutes worldwide. Good for finding the latest research findings.</div>
+<div class="source-tags"><span class="source-tag">Research</span><span class="source-tag">Climate</span><span class="source-tag">Physical</span></div>
+</a>
+</div>
+</div>
+<!-- GEOPOLITICS AND WORLD AFFAIRS -->
+<div class="sources-section">
+<div class="sources-section-header">
+<div class="sources-section-title">Geopolitics and World Affairs</div>
+<span class="sources-count">5 sources</span>
+</div>
+<div class="source-grid">
+<a class="source-card" href="https://theconversation.com/au/search?q=world+geography" target="_blank">
+<div class="source-card-top"><span class="source-name">The Conversation - World</span><span class="source-free">Free</span></div>
+<div class="source-desc">Academic analysis of global events - conflicts, elections, borders, power and diplomacy. Written by experts, free to read.</div>
+<div class="source-tags"><span class="source-tag">Geopolitics</span><span class="source-tag">Analysis</span><span class="source-tag">Global</span></div>
+</a>
+<a class="source-card" href="https://www.bbc.com/news/world" target="_blank">
+<div class="source-card-top"><span class="source-name">BBC World News</span><span class="source-free">Free</span></div>
+<div class="source-desc">Trusted international reporting on global affairs. Balanced, comprehensive and always free to read.</div>
+<div class="source-tags"><span class="source-tag">Geopolitics</span><span class="source-tag">Current affairs</span><span class="source-tag">Global</span></div>
+</a>
+<a class="source-card" href="https://www.theguardian.com/world" target="_blank">
+<div class="source-card-top"><span class="source-name">The Guardian - World</span><span class="source-free">Free</span></div>
+<div class="source-desc">In-depth global news coverage with strong investigative journalism on power, conflict and inequality.</div>
+<div class="source-tags"><span class="source-tag">Geopolitics</span><span class="source-tag">Inequality</span><span class="source-tag">Conflict</span></div>
+</a>
+<a class="source-card" href="https://news.un.org" target="_blank">
+<div class="source-card-top"><span class="source-name">UN News</span><span class="source-free">Free</span></div>
+<div class="source-desc">Official United Nations news - SDG progress, humanitarian crises, global agreements and peacekeeping. Directly links to SDGs.</div>
+<div class="source-tags"><span class="source-tag">SDGs</span><span class="source-tag">Humanitarian</span><span class="source-tag">Global</span></div>
+</a>
+<a class="source-card" href="https://theconversation.com/au" target="_blank">
+<div class="source-card-top"><span class="source-name">The Conversation - Australia</span><span class="source-origin">Australian</span></div>
+<div class="source-desc">Australian academics writing on politics, foreign policy and Australia's role in the Indo-Pacific. Excellent for Australia's Neighbours unit.</div>
+<div class="source-tags"><span class="source-tag">Australia</span><span class="source-tag">Indo-Pacific</span><span class="source-tag">Policy</span></div>
+</a>
+</div>
+</div>
+<!-- OCEANS AND PHYSICAL GEOGRAPHY -->
+<div class="sources-section">
+<div class="sources-section-header">
+<div class="sources-section-title">Oceans and Physical Geography</div>
+<span class="sources-count">4 sources</span>
+</div>
+<div class="source-grid">
+<a class="source-card" href="https://oceanservice.noaa.gov/news/" target="_blank">
+<div class="source-card-top"><span class="source-name">NOAA Ocean Service</span><span class="source-free">Free</span></div>
+<div class="source-desc">US National Oceanic and Atmospheric Administration - ocean data, sea level rise, coral reefs and marine ecosystems. Authoritative.</div>
+<div class="source-tags"><span class="source-tag">Oceans</span><span class="source-tag">Data</span><span class="source-tag">Physical</span></div>
+</a>
+<a class="source-card" href="https://www.nationalgeographic.com/animals/topic/ocean" target="_blank">
+<div class="source-card-top"><span class="source-name">National Geographic - Oceans</span><span class="source-free">Free</span></div>
+<div class="source-desc">Ocean ecosystems, marine biodiversity, plastic pollution and coral bleaching - visually stunning and student-friendly.</div>
+<div class="source-tags"><span class="source-tag">Oceans</span><span class="source-tag">Ecosystems</span><span class="source-tag">Visual</span></div>
+</a>
+<a class="source-card" href="https://www.geographyrealm.com" target="_blank">
+<div class="source-card-top"><span class="source-name">Geography Realm</span><span class="source-free">Free</span></div>
+<div class="source-desc">Physical and human geography explainers and current stories. Good for building background knowledge on any topic.</div>
+<div class="source-tags"><span class="source-tag">Physical</span><span class="source-tag">Human</span><span class="source-tag">Explainers</span></div>
+</a>
+<a class="source-card" href="https://www.aims.gov.au/research-topics/marine-life" target="_blank">
+<div class="source-card-top"><span class="source-name">AIMS - Great Barrier Reef</span><span class="source-origin">Australian</span></div>
+<div class="source-desc">Australian Institute of Marine Science - live reef monitoring data and annual condition reports. Perfect for Oceanography case studies.</div>
+<div class="source-tags"><span class="source-tag">Reef</span><span class="source-tag">Data</span><span class="source-tag">Australia</span></div>
+</a>
+</div>
+</div>
+<!-- FOOD AND PRIMARY PRODUCTION -->
+<div class="sources-section">
+<div class="sources-section-header">
+<div class="sources-section-title">Food and Primary Production</div>
+<span class="sources-count">4 sources</span>
+</div>
+<div class="source-grid">
+<a class="source-card" href="https://www.abc.net.au/news/rural" target="_blank">
+<div class="source-card-top"><span class="source-name">ABC Rural</span><span class="source-origin">Australian</span></div>
+<div class="source-desc">Australian agriculture, drought, farming communities and food production. Excellent Australian case studies for Primary Production.</div>
+<div class="source-tags"><span class="source-tag">Agriculture</span><span class="source-tag">Australia</span><span class="source-tag">Rural</span></div>
+</a>
+<a class="source-card" href="https://www.fao.org/home/en/" target="_blank">
+<div class="source-card-top"><span class="source-name">FAO News</span><span class="source-free">Free</span></div>
+<div class="source-desc">UN Food and Agriculture Organisation - global food security, hunger data and sustainable agriculture. Directly links to SDG 2.</div>
+<div class="source-tags"><span class="source-tag">Food security</span><span class="source-tag">SDG 2</span><span class="source-tag">Global</span></div>
+</a>
+<a class="source-card" href="https://ourworldindata.org/" target="_blank">
+<div class="source-card-top"><span class="source-name">Our World in Data - Food</span><span class="source-free">Free</span></div>
+<div class="source-desc">Data visualisations on global food production, land use, water use and agricultural change. Excellent for statistics in responses.</div>
+<div class="source-tags"><span class="source-tag">Data</span><span class="source-tag">Agriculture</span><span class="source-tag">Statistics</span></div>
+</a>
+<a class="source-card" href="https://theconversation.com/topics/agriculture-24" target="_blank">
+<div class="source-card-top"><span class="source-name">The Conversation - Agriculture</span><span class="source-free">Free</span></div>
+<div class="source-desc">Academic analysis of farming, food systems and land use - Australian and global perspectives, all free to read.</div>
+<div class="source-tags"><span class="source-tag">Agriculture</span><span class="source-tag">Research</span><span class="source-tag">Australia</span></div>
+</a>
+</div>
+</div>
+<!-- DEVELOPMENT AND INEQUALITY -->
+<div class="sources-section">
+<div class="sources-section-header">
+<div class="sources-section-title">Development, Inequality and Global Citizenship</div>
+<span class="sources-count">4 sources</span>
+</div>
+<div class="source-grid">
+<a class="source-card" href="https://ourworldindata.org" target="_blank">
+<div class="source-card-top"><span class="source-name">Our World in Data</span><span class="source-free">Free</span></div>
+<div class="source-desc">The best free data site on the planet. Statistics on every SDG, every country, every global trend. Essential for any assessment response.</div>
+<div class="source-tags"><span class="source-tag">Data</span><span class="source-tag">SDGs</span><span class="source-tag">All topics</span></div>
+</a>
+<a class="source-card" href="https://www.theguardian.com/global-development" target="_blank">
+<div class="source-card-top"><span class="source-name">The Guardian - Global Development</span><span class="source-free">Free</span></div>
+<div class="source-desc">In-depth journalism on poverty, inequality, aid, development and human rights across the developing world.</div>
+<div class="source-tags"><span class="source-tag">Development</span><span class="source-tag">Inequality</span><span class="source-tag">SDGs</span></div>
+</a>
+<a class="source-card" href="https://theconversation.com/topics/inequality-829" target="_blank">
+<div class="source-card-top"><span class="source-name">The Conversation - Inequality</span><span class="source-free">Free</span></div>
+<div class="source-desc">Academic research on inequality within and between countries - wealth gaps, access to education, health and opportunity.</div>
+<div class="source-tags"><span class="source-tag">Inequality</span><span class="source-tag">SDG 10</span><span class="source-tag">Research</span></div>
+</a>
+<a class="source-card" href="https://dashboards.sdgindex.org" target="_blank">
+<div class="source-card-top"><span class="source-name">SDG Index Dashboard</span><span class="source-free">Free</span></div>
+<div class="source-desc">See how every country in the world is tracking on every SDG. Find Australia and compare with neighbours - perfect for assessments.</div>
+<div class="source-tags"><span class="source-tag">SDGs</span><span class="source-tag">Data</span><span class="source-tag">Global</span></div>
+</a>
+</div>
+</div>
+<!-- MAPS AND SPATIAL -->
+<div class="sources-section">
+<div class="sources-section-header">
+<div class="sources-section-title">Maps, Spatial and Visual Geography</div>
+<span class="sources-count">4 sources</span>
+</div>
+<div class="source-grid">
+<a class="source-card" href="https://www.brilliantmaps.com" target="_blank">
+<div class="source-card-top"><span class="source-name">Brilliant Maps</span><span class="source-free">Free</span></div>
+<div class="source-desc">Fascinating maps showing everything from population density to language distribution to food consumption. Endlessly interesting.</div>
+<div class="source-tags"><span class="source-tag">Maps</span><span class="source-tag">Visual</span><span class="source-tag">All topics</span></div>
+</a>
+<a class="source-card" href="https://www.thetruesize.com" target="_blank">
+<div class="source-card-top"><span class="source-name">The True Size Of...</span><span class="source-free">Free</span></div>
+<div class="source-desc">Interactive map showing the real size of countries. Africa is enormous. Great for understanding map projections and spatial distortion.</div>
+<div class="source-tags"><span class="source-tag">Maps</span><span class="source-tag">Interactive</span><span class="source-tag">Skills</span></div>
+</a>
+<a class="source-card" href="https://earth.google.com/web/" target="_blank">
+<div class="source-card-top"><span class="source-name">Google Earth Web</span><span class="source-free">Free</span></div>
+<div class="source-desc">Fly anywhere on Earth in 3D. Use historical imagery to see how places have changed. Essential spatial technology tool.</div>
+<div class="source-tags"><span class="source-tag">Spatial</span><span class="source-tag">Physical</span><span class="source-tag">Skills</span></div>
+</a>
+<a class="source-card" href="https://www.windy.com" target="_blank">
+<div class="source-card-top"><span class="source-name">Windy</span><span class="source-free">Free</span></div>
+<div class="source-desc">Live animated map of global wind, rain, temperature and ocean currents. Perfect for understanding atmospheric and ocean systems.</div>
+<div class="source-tags"><span class="source-tag">Climate</span><span class="source-tag">Oceans</span><span class="source-tag">Live data</span></div>
+</a>
+</div>
+</div>
 </div>
 <footer><p>Mrs Perkins · Site for educational use only</p></footer>
 <script data-goatcounter="https://mrsperkinsgeography.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
