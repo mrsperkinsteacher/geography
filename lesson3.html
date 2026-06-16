@@ -10,33 +10,63 @@ gtag('js', new Date());
 gtag('config', 'G-NH0WN47NP2');
 </script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lesson 3 - Mrs Perkins Geography</title>
+<title>Lesson 3 - Stage 5 Geography</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
-.uc-box{max-width:560px;margin:4rem auto;text-align:center;padding:3rem 2rem;background:white;border-radius:16px;border:1px solid rgba(84,172,185,0.2);}
-.uc-icon{font-size:48px;margin-bottom:1rem;}
-.uc-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin-bottom:10px;}
-.uc-text{font-size:15px;color:#4a6270;line-height:1.65;margin-bottom:1.5rem;}
-.uc-badge{display:inline-block;background:rgba(236,162,35,0.15);color:#7a4f00;font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;margin-bottom:1.5rem;}
-.back-link{display:inline-block;color:var(--teal-mid);text-decoration:none;font-size:14px;font-weight:600;}
+.lesson-hero{background:var(--navy);padding:2.5rem 2rem 2rem;}
+.lesson-eyebrow{font-size:11px;font-weight:600;color:var(--teal-light);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px;}
+.lesson-title{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,48px);font-weight:700;color:white;margin-bottom:8px;}
+.lesson-lead{font-size:15px;color:rgba(255,255,255,0.65);max-width:640px;line-height:1.6;}
+.lesson-accent{height:3px;background:linear-gradient(90deg,var(--yellow),var(--orange));}
+.teacher-box{background:rgba(0,49,70,0.06);border-left:4px solid var(--teal-mid);border-radius:0 10px 10px 0;padding:1.1rem 1.25rem;margin-bottom:1.75rem;}
+.teacher-label{font-size:10px;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:6px;}
+.teacher-text{font-size:14px;color:#2a3f4a;line-height:1.7;}
+.timing-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2rem;}
+.timing-pill{font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;background:white;border:1px solid rgba(84,172,185,0.3);color:var(--navy);}
+.section-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:1rem;padding-bottom:6px;border-bottom:2px solid rgba(84,172,185,0.2);}
+.task-block{background:white;border-radius:12px;border:1px solid rgba(84,172,185,0.2);margin-bottom:1.25rem;overflow:hidden;}
+.task-header{background:var(--navy);padding:0.75rem 1.25rem;display:flex;align-items:center;gap:12px;}
+.task-num{background:var(--teal-mid);color:white;font-size:12px;font-weight:700;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.task-name{font-size:14px;font-weight:600;color:white;}
+.task-time{margin-left:auto;font-size:11px;color:rgba(255,255,255,0.5);}
+.task-body{padding:1.1rem 1.25rem;}
+.task-body p{font-size:14px;color:#2a3f4a;line-height:1.7;margin-bottom:0.6rem;}
+.task-body p:last-child{margin-bottom:0;}
+.notes-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:0.75rem;}
+@media(max-width:600px){.notes-grid{grid-template-columns:1fr;}}
+.notes-box{background:var(--cream);border-radius:8px;padding:1rem;min-height:100px;}
+.notes-box-label{font-size:11px;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.notes-line{height:1px;background:rgba(84,172,185,0.25);margin-bottom:10px;}
+.notes-lines{display:flex;flex-direction:column;gap:10px;}
+.notes-single-line{height:1px;background:rgba(84,172,185,0.3);}
+.notes-wide{background:var(--cream);border-radius:8px;padding:1rem;margin-top:0.75rem;min-height:80px;}
+.sdg-link-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:0.75rem;}
+.sdg-link-card{background:var(--navy);border-radius:8px;padding:0.75rem 1rem;text-decoration:none;display:block;transition:opacity 0.2s;}
+.sdg-link-card:hover{opacity:0.85;}
+.sdg-link-film{font-size:10px;font-weight:600;color:var(--teal-light);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;}
+.sdg-link-sdgs{font-size:13px;color:var(--amber);font-weight:600;}
+.sdg-link-note{font-size:12px;color:rgba(255,255,255,0.55);margin-top:3px;}
+.tip-box{background:rgba(84,172,185,0.08);border:1px solid rgba(84,172,185,0.25);border-radius:8px;padding:1rem;margin-top:0.75rem;}
+.tip-label{font-size:10px;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.tip-text{font-size:13px;color:#2a3f4a;line-height:1.6;}
+.commit-box{background:var(--navy);border-radius:10px;padding:1.25rem;margin-top:0.75rem;text-align:center;}
+.commit-label{font-size:11px;font-weight:600;color:var(--amber);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.commit-text{font-size:18px;font-family:'Playfair Display',serif;color:white;}
+.back-row{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(84,172,185,0.2);}
+.back-link{color:var(--teal-mid);text-decoration:none;font-size:14px;font-weight:600;}
+.next-link{float:right;background:var(--teal-mid);color:white;text-decoration:none;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;}
 </style>
 </head>
 <body>
 <nav>
 <div class="nav-inner">
-<a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
+<a class="nav-brand" href="index.html">Stage 5 Geography</a>
 <ul class="nav-links">
 <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
 <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
 <li><a href="videos.html">Videos</a></li>
-<li class="has-dropdown">
-<a href="sources.html">Sources</a>
-<div class="dropdown">
-<a href="thisweek.html">This Week in Geography</a>
-<a href="sources.html">Geography Sources</a>
-</div>
-</li>
+<li class="has-dropdown"><a href="sources.html">Sources</a><div class="dropdown"><a href="thisweek.html">This Week in Geography</a><a href="sources.html">Geography Sources</a></div></li>
 </ul>
 <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </div>
@@ -46,15 +76,126 @@ gtag('config', 'G-NH0WN47NP2');
 <a href="sdgs.html">SDGs</a><a href="videos.html">Videos</a><a href="sources.html">Sources</a><a class="mobile-sub" href="thisweek.html">This Week in Geography</a><a class="mobile-sub" href="sources.html">Geography Sources</a>
 </div>
 </nav>
+
+<div class="lesson-hero">
+<div class="lesson-eyebrow">The Three Films Unit · Lesson 3 of 8</div>
+<h1 class="lesson-title">Choose Your SDG</h1>
+<p class="lesson-lead">Students explore the UN Sustainable Development Goals, choose one that connects to their film, and explain the link.</p>
+</div>
+<div class="lesson-accent"></div>
+
 <div class="main">
-<div class="uc-box">
-<div class="uc-badge">Under construction</div>
-<div class="uc-title">Lesson 3</div>
-<div class="uc-text">This lesson page is being built. Check back soon - resources, tasks and materials will appear here.</div>
-<a class="back-link" href="lessons.html">← Back to all lessons</a>
+
+<div class="timing-row">
+<span class="timing-pill">45 minutes</span>
+<span class="timing-pill">Pairs</span>
+<span class="timing-pill">MacBooks</span>
+<span class="timing-pill">Year 9</span>
+</div>
+
+<div class="teacher-box">
+<div class="teacher-label">Teacher notes</div>
+<div class="teacher-text">Students do not need to know the SDGs before this lesson — that is the point of it. The SDG page on this site has all 17 goals as clickable tiles linking directly to the UN descriptions. The suggested SDG links below are a starting point, not a rule — students may find a connection you haven't thought of, and that is fine. The key outcome of this lesson is that every pair has committed to one SDG and can explain why it connects to their film. That commitment carries through every lesson from here.</div>
+</div>
+
+<div class="section-title">What happens this lesson</div>
+
+<div class="task-block">
+<div class="task-header"><div class="task-num">1</div><div class="task-name">Explore the SDGs</div><div class="task-time">10 min</div></div>
+<div class="task-body">
+<p>Open the <a href="sdgs.html" style="color:var(--teal-mid);font-weight:600;">SDGs page</a>. Click on at least five of the goal tiles and read what they are about. You are looking for one that connects to your film.</p>
+<p>The suggested links below are a starting point — but you can choose any SDG you can justify.</p>
+<div class="sdg-link-grid">
+<div class="sdg-link-card">
+<div class="sdg-link-film">2040</div>
+<div class="sdg-link-sdgs">SDG 7 · 11 · 13 · 15</div>
+<div class="sdg-link-note">Clean energy, cities, climate, land</div>
+</div>
+<div class="sdg-link-card">
+<div class="sdg-link-film">Before the Flood</div>
+<div class="sdg-link-sdgs">SDG 7 · 13 · 15 · 17</div>
+<div class="sdg-link-note">Energy, climate, land, partnerships</div>
+</div>
+<div class="sdg-link-card">
+<div class="sdg-link-film">Drowning in Plastic</div>
+<div class="sdg-link-sdgs">SDG 6 · 12 · 14</div>
+<div class="sdg-link-note">Clean water, consumption, oceans</div>
 </div>
 </div>
-<footer><p>Mrs Perkins · Site for educational use only</p></footer>
+</div>
+</div>
+
+<div class="task-block">
+<div class="task-header"><div class="task-num">2</div><div class="task-name">Read about your chosen SDG</div><div class="task-time">10 min</div></div>
+<div class="task-body">
+<p>Click through to the UN page for your chosen SDG. Read the goal description and at least three of the targets listed underneath it.</p>
+<div class="tip-box">
+<div class="tip-label">What are targets?</div>
+<div class="tip-text">Each SDG has specific targets — the measurable steps countries have agreed to take to reach the goal by 2030. They tell you what success actually looks like.</div>
+</div>
+<div class="notes-grid">
+<div class="notes-box">
+<div class="notes-box-label">Our chosen SDG</div>
+<div class="notes-line"></div>
+<div class="notes-lines">
+<div class="notes-single-line"></div>
+<div class="notes-single-line"></div>
+</div>
+</div>
+<div class="notes-box">
+<div class="notes-box-label">One target that matters to us</div>
+<div class="notes-line"></div>
+<div class="notes-lines">
+<div class="notes-single-line"></div>
+<div class="notes-single-line"></div>
+<div class="notes-single-line"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="task-block">
+<div class="task-header"><div class="task-num">3</div><div class="task-name">Make the connection</div><div class="task-time">15 min</div></div>
+<div class="task-body">
+<p>This is the most important part. Answer these three questions together. Write in full sentences — you will use these notes in your presentation later.</p>
+<div class="notes-box" style="margin-top:0.75rem;min-height:80px;">
+<div class="notes-box-label">How does our film connect to this SDG?</div>
+<div class="notes-line"></div>
+<div class="notes-lines"><div class="notes-single-line"></div><div class="notes-single-line"></div><div class="notes-single-line"></div></div>
+</div>
+<div class="notes-box" style="margin-top:0.75rem;min-height:80px;">
+<div class="notes-box-label">What evidence from the film supports this?</div>
+<div class="notes-line"></div>
+<div class="notes-lines"><div class="notes-single-line"></div><div class="notes-single-line"></div><div class="notes-single-line"></div></div>
+</div>
+<div class="notes-box" style="margin-top:0.75rem;min-height:80px;">
+<div class="notes-box-label">Why does this SDG matter — who does it affect?</div>
+<div class="notes-line"></div>
+<div class="notes-lines"><div class="notes-single-line"></div><div class="notes-single-line"></div><div class="notes-single-line"></div></div>
+</div>
+</div>
+</div>
+
+<div class="task-block">
+<div class="task-header"><div class="task-num">4</div><div class="task-name">Commit</div><div class="task-time">10 min</div></div>
+<div class="task-body">
+<p>Share your SDG choice and connection with another pair. Explain it in two sentences. If you can't explain it clearly in two sentences, your connection might need to be tighter.</p>
+<div class="commit-box">
+<div class="commit-label">Our commitment</div>
+<div class="commit-text">We are connecting our film to SDG ___</div>
+</div>
+<p style="margin-top:0.75rem;font-size:13px;color:#4a6270;">Lock this in. You will build your whole presentation around this choice.</p>
+</div>
+</div>
+
+<div class="back-row">
+<a class="back-link" href="lessons.html">← All lessons</a>
+<a class="next-link" href="lesson4.html">Lesson 4 →</a>
+</div>
+
+</div>
+<footer><p>Stage 5 Geography · For educational use only</p></footer>
 <script data-goatcounter="https://mrsperkinsgeography.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
