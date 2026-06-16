@@ -15,39 +15,37 @@ gtag('config', 'G-NH0WN47NP2');
 <link rel="stylesheet" href="shared.css">
 <style>
 .lesson-hero{background:#54acb9;padding:2.5rem 2rem 2rem;}
-.lesson-eyebrow{font-size:11px;font-weight:600;color:var(--teal-light);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px;}
+.lesson-eyebrow{font-size:11px;font-weight:600;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px;}
 .lesson-title{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,48px);font-weight:700;color:white;margin-bottom:8px;}
-.lesson-lead{font-size:15px;color:rgba(255,255,255,0.65);max-width:640px;line-height:1.6;}
+.lesson-lead{font-size:15px;color:rgba(255,255,255,0.75);max-width:640px;line-height:1.6;}
 .lesson-accent{display:none;}
 .timing-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2rem;}
 .timing-pill{font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;background:white;border:1px solid rgba(84,172,185,0.3);color:#54acb9;}
-.section-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#54acb9;margin-bottom:1rem;padding-bottom:6px;border-bottom:2px solid rgba(84,172,185,0.2);}
+.section-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#003146;margin-bottom:1rem;padding-bottom:6px;border-bottom:2px solid rgba(84,172,185,0.2);}
 .task-block{background:white;border-radius:12px;border:1px solid rgba(84,172,185,0.2);margin-bottom:1.25rem;overflow:hidden;}
 .task-header{background:#003146;padding:0.75rem 1.25rem;display:flex;align-items:center;gap:12px;}
-.task-num{background:#2a8a9a;color:white;font-size:12px;font-weight:700;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.task-num{background:#54acb9;color:white;font-size:12px;font-weight:700;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .task-name{font-size:14px;font-weight:600;color:white;}
 .task-time{margin-left:auto;font-size:11px;color:rgba(255,255,255,0.5);}
 .task-body{padding:1.1rem 1.25rem;}
 .task-body p{font-size:14px;color:#2a3f4a;line-height:1.7;margin-bottom:0.6rem;}
 .task-body p:last-child{margin-bottom:0;}
-.slide-planner{display:flex;flex-direction:column;gap:12px;margin-top:0.75rem;}
-.slide-card{border-radius:10px;border:1px solid rgba(84,172,185,0.2);overflow:hidden;}
-.slide-card-header{background:#003146;padding:0.6rem 1rem;display:flex;align-items:center;gap:10px;}
-.slide-num{background:#54acb9;color:white;font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;}
-.slide-title-label{font-size:13px;font-weight:600;color:white;}
-.slide-card-body{padding:0.9rem 1rem;background:white;}
-.slide-purpose{font-size:13px;color:#4a6270;line-height:1.6;margin-bottom:0.6rem;}
-.slide-note-label{font-size:10px;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
-.slide-lines{display:flex;flex-direction:column;gap:8px;margin-top:4px;}
-.slide-line{height:1px;background:rgba(84,172,185,0.25);}
-.rules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:0.75rem;}
-.rule-box{background:var(--cream);border-radius:8px;padding:0.9rem;}
-.rule-icon{font-size:20px;margin-bottom:4px;}
-.rule-title{font-size:13px;font-weight:600;color:#54acb9;margin-bottom:3px;}
-.rule-text{font-size:12px;color:#4a6270;line-height:1.55;}
-.back-row{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(84,172,185,0.2);}
-.back-link{color:var(--teal-mid);text-decoration:none;font-size:14px;font-weight:600;}
-.next-link{float:right;background:var(--teal-mid);color:white;text-decoration:none;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;}
+.notes-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:0.75rem;}
+@media(max-width:600px){.notes-grid{grid-template-columns:1fr;}}
+.notes-box{background:var(--cream);border-radius:8px;padding:1rem;min-height:100px;}
+.notes-box-label{font-size:11px;font-weight:600;color:#54acb9;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.notes-line{height:1px;background:rgba(84,172,185,0.25);margin-bottom:10px;}
+.notes-lines{display:flex;flex-direction:column;gap:10px;}
+.notes-single-line{height:1px;background:rgba(84,172,185,0.3);}
+.notes-wide{background:var(--cream);border-radius:8px;padding:1rem;margin-top:0.75rem;min-height:80px;}
+.split-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:0.75rem;}
+@media(max-width:600px){.split-row{grid-template-columns:1fr;}}
+.early-box{background:rgba(84,172,185,0.08);border-left:4px solid #54acb9;border-radius:0 8px 8px 0;padding:1rem 1rem 1rem 1.25rem;margin-top:0.75rem;}
+.early-label{font-size:11px;font-weight:600;color:#003146;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.early-text{font-size:13px;color:#2a3f4a;line-height:1.65;}
+.back-row{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(84,172,185,0.2);overflow:hidden;}
+.back-link{color:#54acb9;text-decoration:none;font-size:14px;font-weight:600;}
+.next-link{float:right;background:#003146;color:white;text-decoration:none;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;}
 </style>
 </head>
 <body>
@@ -85,8 +83,6 @@ gtag('config', 'G-NH0WN47NP2');
 <span class="timing-pill">Year 9</span>
 </div>
 
-</div>
-
 <div class="section-title">Slide rules — read these first</div>
 
 <div class="task-block">
@@ -111,8 +107,6 @@ gtag('config', 'G-NH0WN47NP2');
 </div>
 </div>
 </div>
-</div>
-
 <div class="section-title">Your slide-by-slide plan</div>
 
 <div class="task-block">
