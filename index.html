@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH0WN47NP2"></script>
@@ -11,63 +11,75 @@ gtag('config', 'G-NH0WN47NP2');
 </script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geography Resources</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville:ital@0;1&family=Inter:wght@400;600;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
 <style>
-.home-hero{background:var(--navy);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;position:relative;}
-.home-title{font-family:'Copperplate','Copperplate Gothic Light','Copperplate Gothic Bold',serif;font-size:clamp(60px,12vw,160px);font-weight:700;color:white;line-height:0.95;margin-bottom:20px;display:block;letter-spacing:0.02em;}
-.home-sub{font-size:16px;color:rgba(255,255,255,0.6);max-width:600px;margin:0 auto 2rem;line-height:1.65;}
-.home-divider{display:none;}
-.home-nav-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:100%;max-width:820px;}
-.home-tile{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);color:white;text-decoration:none;padding:14px 18px;border-radius:8px;font-size:13px;font-weight:600;transition:background 0.2s,border-color 0.2s;text-align:center;}
-.home-tile:hover{background:rgba(255,255,255,0.14);border-color:var(--teal-mid);}
-.home-tile span{display:block;font-size:11px;color:rgba(255,255,255,0.45);font-weight:400;margin-top:2px;}
-.home-school{margin-top:2.5rem;font-size:11px;color:rgba(255,255,255,0.25);letter-spacing:1px;font-style:italic;}
-@media(max-width:600px){.home-nav-tiles{grid-template-columns:1fr 1fr;}.home-sub{font-size:14px;}}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#efe9df}
+body{font-family:Inter,system-ui,sans-serif;color:#1d2a30;line-height:1.5;min-height:100vh;background:linear-gradient(rgba(239,233,223,.5),rgba(239,233,223,.5)),url(images/mm2.webp) center top/cover no-repeat;background-color:#efe9df}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px 20px}
+.trail{padding:12px 0 6px;font-size:12px}.trail a{color:inherit;text-decoration:none}.trail span{margin:0 .45em;opacity:.6}
+.mast{background:#f7f2e8;border:1px solid #1d2a30;padding:18px 26px 14px;margin-top:6px;position:relative;box-shadow:6px 6px 0 #1d2a30}
+.mast .top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid #1d2a30;padding-bottom:8px}
+.mast h1{font-family:"Abril Fatface",Georgia,serif;font-weight:400;font-size:clamp(46px,9vw,108px);line-height:.95;text-align:center;margin:14px 0 8px;letter-spacing:-.01em}
+.mast .sub{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:3px double #1d2a30;border-bottom:1px solid #1d2a30;padding:7px 0;font-family:"Libre Baskerville",Georgia,serif;font-style:italic;font-size:14px}
+.edition{display:grid;grid-template-columns:1.35fr 1fr;gap:22px;margin-top:28px}
+.clip{position:relative;display:block;text-decoration:none;color:inherit;background:#fbf8f1;padding:20px 22px 18px;box-shadow:0 10px 22px rgba(29,42,48,.18);transition:transform .2s}
+.clip::before{content:"";position:absolute;top:-12px;left:50%;width:110px;height:26px;margin-left:-55px;background:rgba(232,165,160,.75);transform:rotate(-3deg)}
+.clip.t2::before{background:rgba(59,138,150,.6);transform:rotate(4deg);left:30%}
+.clip.t3::before{background:rgba(232,194,122,.75);transform:rotate(-6deg);left:68%}
+.clip:hover{transform:rotate(0) translateY(-4px)!important}
+.k{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#b0473f}
+.clip h2{font-family:"Abril Fatface",Georgia,serif;font-weight:400;font-size:34px;line-height:1.05;margin:4px 0 8px}
+.clip p{font-family:"Libre Baskerville",Georgia,serif;font-size:14.5px;line-height:1.6}
+.read{display:inline-block;margin-top:12px;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid #b0473f;padding-bottom:1px}
+.lead{transform:rotate(-.6deg);padding:0;overflow:hidden}
+.lead .pic{height:230px;background:url(images/mm5.webp) center 30%/cover;display:flex;align-items:flex-end;padding:16px 22px}
+.lead .pic span{font-family:"Abril Fatface",Georgia,serif;font-size:58px;line-height:.9;color:#fbf8f1;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+.lead .in{padding:18px 22px 20px}
+.lead .in p{columns:2;column-gap:22px}
+.side{display:flex;flex-direction:column;gap:22px}
+.side .clip:nth-child(1){transform:rotate(.8deg)}.side .clip:nth-child(2){transform:rotate(-.7deg)}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}
+.row3 .clip:nth-child(1){transform:rotate(-.8deg)}.row3 .clip:nth-child(2){transform:rotate(.5deg)}.row3 .clip:nth-child(3){transform:rotate(-.4deg)}
+.row3 .clip h2{font-size:28px}
+.syl{background:#1d2a30;color:#f7f2e8}.syl .k{color:#e8c27a}.syl .read{border-color:#e8c27a}
+.stages{margin-top:30px;background:#f7f2e8;border:1px solid #1d2a30;padding:14px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.stages b{font-family:"Abril Fatface",Georgia,serif;font-weight:400;font-size:22px;margin-right:6px}
+.stages a{text-decoration:none;color:#1d2a30;font-size:13px;font-weight:600;border:1px solid #1d2a30;border-radius:99px;padding:6px 14px;background:#fff}
+.stages a:hover{background:#1d2a30;color:#f7f2e8}
+footer{text-align:center;padding:18px;margin-top:24px;background:rgba(247,242,232,.94);border:1px solid #1d2a30}
+.enc{font-family:Caveat,cursive;font-size:28px;color:#b0473f;min-height:1.3em}
+.nm{font-size:12px;opacity:.8}.cr{font-size:11px;opacity:.65;margin-top:6px}.cr a{color:inherit}
+@media(max-width:860px){.edition,.row3{grid-template-columns:1fr}.lead .in p{columns:1}.mast .top span:last-child{display:none}}
 </style>
-<style id="mp-trail-css">.mp-trail{margin:0 0 .6rem!important;padding:0!important;font-size:12px!important;line-height:1.5!important;letter-spacing:.02em!important;font-weight:400!important;text-transform:none!important;text-align:inherit;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;grid-column:1/-1;max-width:none}.mp-trail a{color:inherit!important;text-decoration:none!important;font:inherit!important}.mp-trail a:hover{text-decoration:underline!important}.mp-trail .mp-sep{margin:0 .45em}nav>.mp-trail{max-width:1100px;margin:0 auto!important;padding:.45rem 2rem 0!important}</style>
 </head>
 <body>
-<nav><p class="mp-trail" style="color:rgb(255, 255, 255);opacity:0.85"><a href="https://mrsperkinsteacher.github.io/">Mrs Perkins home</a><span class="mp-sep">/</span><a href="https://mrsperkinsteacher.github.io/geography/">Geography Resources</a></p>
-<div class="nav-inner">
-<a class="nav-brand" href="index.html">Geography Resources</a>
-<ul class="nav-links">
-<li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
-<li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
-<li><a href="videos.html">Videos</a></li>
-<li class="has-dropdown">
-<a href="sources.html">Sources</a>
-<div class="dropdown">
-<a href="thisweek.html">This Week in Geography</a>
-<a href="sources.html">Geography Sources</a>
+<div class="wrap">
+<p class="trail"><a href="https://mrsperkinsteacher.github.io/">Mrs Perkins home</a><span>/</span>Geography Resources</p>
+<header class="mast">
+  <div class="top"><span>Mrs Perkins Geography</span><span>Stage 4 &middot; Stage 5 &middot; Stage 6</span><span>Free to read</span></div>
+  <h1>Geography Resources</h1>
+  <div class="sub"><span>Current affairs, videos, reliable sources and the syllabus - all in one place.</span><span>Where will Geography take you?</span></div>
+</header>
+<section class="edition">
+  <a class="clip lead" href="thisweek.html">
+    <div class="pic"><span>This Week in Geography</span></div>
+    <div class="in"><p class="k">Updated weekly</p><p>Current news stories - and what they mean for the world we study. Every flood, election, food shortage and border dispute is a geography story. These are this week's picks, each with a short geography connection and the SDG it links to.</p><span class="read">Read this week's stories &rarr;</span></div>
+  </a>
+  <div class="side">
+    <a class="clip t2" href="videos.html"><p class="k">Watch &middot; Learn &middot; Explore</p><h2>Videos</h2><p>Curated channels and playlists - Mrs Perkins' own Geography Skills and Study Skills playlists, plus the best SDG explainers.</p><span class="read">Watch &rarr;</span></a>
+    <a class="clip t3" href="sources.html"><p class="k">Research &middot; Case studies</p><h2>Sources</h2><p>Reliable, free sources for current geography news, research and case studies - all clickable, no paywall.</p><span class="read">Find a source &rarr;</span></a>
+  </div>
+</section>
+<section class="row3">
+  <a class="clip syl" href="syllabus.html"><p class="k">NSW Geography &middot; NESA</p><h2>Syllabus and Expectations</h2><p>What you will study, what is expected of you, and how you will be assessed - explained clearly.</p><span class="read">Open &rarr;</span></a>
+  <a class="clip t2" href="sdgs.html"><p class="k">United Nations</p><h2>SDGs</h2><p>The 17 Sustainable Development Goals, and how they link to the geography you study.</p><span class="read">Open &rarr;</span></a>
+  <a class="clip t3" href="films.html"><p class="k">Stage 5 Lessons</p><h2>The Three Films</h2><p>Films, lessons and resources for the Three Films lesson sequence.</p><span class="read">Open &rarr;</span></a>
+</section>
+<nav class="stages"><b>Find your Stage</b><a href="https://mrsperkinsteacher.github.io/stage4geo/">Stage 4</a><a href="https://mrsperkinsteacher.github.io/stage5geo/">Stage 5</a><a href="https://mrsperkinsteacher.github.io/stage5geo/elective/">Stage 5 Elective</a><a href="https://mrsperkinsteacher.github.io/stage6geo/">Stage 6</a></nav>
+<footer><p class="enc" id="enc"></p><p class="nm">Mrs Perkins &middot; Geography Resources &middot; For educational use only</p><p class="cr">Artwork: Mixed Media Newspaper Backgrounds by <a href="https://www.etsy.com/shop/DelightfulDigiArt" target="_blank" rel="noopener">DelightfulDigiArt</a></p></footer>
 </div>
-</li>
-<li><a href="elective.html">Stage 6 Electives</a></li>
-</ul>
-<button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-</div>
-<div class="nav-accent"></div>
-<div class="nav-mobile" id="mobileNav">
-<a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
-<a href="sdgs.html">SDGs</a><a href="videos.html">Videos</a><a href="sources.html">Sources</a><a class="mobile-sub" href="thisweek.html">This Week in Geography</a><a class="mobile-sub" href="sources.html">Geography Sources</a>
-<a href="elective.html">Stage 6 Electives</a>
-</div>
-</nav>
-<div class="home-hero">
-<h1 class="home-title">Geography Resources</h1>
-<p class="home-sub">SDGs, current affairs, reliable sources and Stage 6 elective units - a resource hub alongside the Stage 4, 5 and 6 unit sites.</p>
-<div class="home-divider"></div>
-<div class="home-nav-tiles">
-<a class="home-tile" href="films.html">Stage 5 Lessons<span>Films · Lessons · Resources</span></a>
-<a class="home-tile" href="sdgs.html">SDGs<span>UN Sustainable Development Goals</span></a>
-<a class="home-tile" href="videos.html">Videos<span>Channels · Playlists · Explainers</span></a>
-<a class="home-tile" href="thisweek.html">This Week in Geography<span>Current news · Geography connections</span></a>
-<a class="home-tile" href="sources.html">Sources<span>Reliable free geography sources</span></a>
-<a class="home-tile" href="elective.html">Stage 6 Electives<span>Geopolitics · Oceanography · Extreme Environments · more</span></a>
-</div>
-<div class="home-school">Where will Geography take you?</div>
-</div>
-<footer><p>Geography Resources · For educational use only</p></footer>
+<script>(function(){var L=["Small steps every lesson add up to big understanding.", "Curious minds make great geographers.", "You do not have to be perfect - just keep going.", "Ask the question. Someone else is wondering too.", "Every map started as a blank page.", "Your effort today is tomorrow's confidence.", "Look closer. Geography is everywhere you go.", "Be kind, work hard, and enjoy the journey.", "Mistakes are proof you are trying.", "Every expert was once a beginner.", "Big questions lead to big discoveries.", "Keep asking why - that is where the learning lives.", "Progress, not perfection.", "You are capable of more than you think.", "Take a breath, then take the next step.", "The world is your classroom.", "Hard work grows strong minds.", "Help someone else understand - you will learn it twice.", "Read the map, then make your own path.", "Today is a great day to learn something new.", "And we know that in all things God works for the good of those who love him. - Romans 8:28", "If you are faithful in little things, you will be faithful in large ones. - Luke 16:10", "Keep on asking, and you will receive what you ask for. Keep on seeking, and you will find. - Matthew 7:7", "For I know the plans I have for you, declares the Lord... plans to give you hope and a future. - Jeremiah 29:11", "Whatever you do, work at it with all your heart. - Colossians 3:23", "The earth is the Lord's, and everything in it. - Psalm 24:1"];var e=document.getElementById("enc");if(e)e.textContent=L[Math.floor(Math.random()*L.length)];})();</script>
 <script data-goatcounter="https://mrsperkinsgeography.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
