@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
+<meta charset="utf-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH0WN47NP2"></script>
 <script>
@@ -9,97 +10,80 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-NH0WN47NP2');
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Films - Stage 5 Geography</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared.css">
+<script data-goatcounter="https://mrsperkinsgeography.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Films - Mrs Perkins Geography</title>
+<meta name="description" content="The Three Films lesson - choose from 2040, Before the Flood or Drowning in Plastic.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;600;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <style>
-.film-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;}
-.film-card{background:white;border-radius:12px;overflow:hidden;border:1px solid rgba(84,172,185,0.2);display:flex;flex-direction:column;}
-.film-card-top{background:var(--navy);padding:1.25rem;}
-.film-accent{display:none;}
-.film-number{font-size:10px;font-weight:600;color:var(--teal-light);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;}
-.film-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:white;margin-bottom:4px;}
-.film-meta{font-size:12px;color:var(--teal-light);}
-.film-body{padding:1.25rem;flex:1;display:flex;flex-direction:column;}
-.film-desc{font-size:14px;color:var(--text);line-height:1.65;margin-bottom:1rem;flex:1;}
-.film-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;}
-.film-tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:12px;background:rgba(84,172,185,0.12);color:var(--teal-dark);}
-.film-sdg{font-size:12px;color:#4a6270;margin-bottom:6px;}
-.film-q{font-size:13px;font-style:italic;color:var(--navy);margin-bottom:1.25rem;padding:0.6rem 0.75rem;background:var(--cream);border-left:3px solid var(--teal-mid);border-radius:0 6px 6px 0;}
-.film-btn{display:inline-block;background:var(--teal-mid);color:white;text-decoration:none;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;text-align:center;transition:background 0.2s;}
-.film-btn:hover{background:var(--teal-dark);}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 Inter,system-ui,sans-serif}
+a{color:inherit} h1,h2,h3,h4{text-wrap:balance} p,li{text-wrap:pretty}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.trail{font-size:12px;padding:14px 0 10px;opacity:.8} .trail a{text-decoration:none} .trail a:hover{text-decoration:underline} .trail i{margin:0 .45em;font-style:normal}
+.backrow{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:44px 0 6px}
+.backrow a{text-decoration:none;font-weight:700;font-size:14px;padding:11px 22px;border-radius:40px;border:2px solid currentColor}
+footer{text-align:center;padding:26px 20px 40px;font-size:12px;opacity:.85}
+.enc{font:700 28px Caveat,cursive;min-height:1.3em;margin:0 0 6px}
+
+body{background:#1c1012;color:#f6ead7;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.02) 0 40px,transparent 40px 80px)}
+.trail{color:#d9c3a5}
+.curtain{position:relative;text-align:center;padding:40px 20px 34px;border-radius:16px;margin-top:6px;background:linear-gradient(90deg,#5e0f18,#8e1d2a 8%,#5e0f18 16%,#8e1d2a 24%,#5e0f18 32%,#8e1d2a 40%,#5e0f18 48%,#8e1d2a 56%,#5e0f18 64%,#8e1d2a 72%,#5e0f18 80%,#8e1d2a 88%,#5e0f18);box-shadow:inset 0 -30px 40px rgba(0,0,0,.4)}
+.curtain small{display:inline-block;font-weight:800;letter-spacing:.3em;font-size:12px;background:#ffc20e;color:#3a0b11;padding:4px 12px;border-radius:4px}
+.curtain h1{font:400 clamp(42px,6vw,72px)/1 "DM Serif Display",serif;margin:12px 0 10px}
+.curtain p{margin:0 auto;max-width:600px;color:#f3dcd0}
+.tickets{display:grid;gap:30px;margin-top:40px}
+.ticket{display:grid;grid-template-columns:110px 1fr;background:#f6ead7;color:#2a1d12;border-radius:14px;overflow:hidden;box-shadow:0 14px 30px rgba(0,0,0,.45);position:relative;transition:transform .2s}
+.ticket:hover{transform:rotate(-.6deg) scale(1.01)}
+.stub{background:var(--c);color:#f6ead7;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border-right:3px dashed #f6ead7;position:relative}
+.stub span{font-size:11px;font-weight:800;letter-spacing:.2em;writing-mode:vertical-rl;transform:rotate(180deg)}
+.stub b{font:400 54px/1 "DM Serif Display",serif}
+.ticket::before,.ticket::after{content:"";position:absolute;left:96px;width:28px;height:28px;border-radius:50%;background:#1c1012}
+.ticket::before{top:-14px}.ticket::after{bottom:-14px}
+.tbody{padding:24px 30px}
+.meta{margin:0;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+.tbody h2{font:400 clamp(30px,4vw,44px)/1.05 "DM Serif Display",serif;margin:4px 0 8px}
+.tbody > p{margin:0 0 12px}
+.moods{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px} .moods i{font-style:normal;font-size:12.5px;font-weight:700;border:2px solid var(--c);color:var(--c);border-radius:20px;padding:2px 10px}
+.sdgline{display:flex;align-items:center;gap:8px;margin-bottom:12px} .sdgline small{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-right:4px}
+.sdgline a{display:block;line-height:0;transition:transform .2s} .sdgline a:hover{transform:scale(1.1)} .sdgline img{width:52px;height:52px;display:block}
+.ask{font:700 22px/1.25 Caveat,cursive;color:#5e0f18}
+.ask b{font-family:Inter,sans-serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#2a1d12}
+.watch{display:inline-block;text-decoration:none;font-weight:700;background:var(--c);color:#fff;border-radius:30px;padding:10px 20px}
+.backrow a{color:#ffc20e} footer{color:#d9c3a5} .enc{color:#ffc20e}
+@media(max-width:600px){.ticket{grid-template-columns:70px 1fr}.ticket::before,.ticket::after{left:56px}.tbody{padding:20px}}
 </style>
-<style id="mp-trail-css">.mp-trail{margin:0 0 .6rem!important;padding:0!important;font-size:12px!important;line-height:1.5!important;letter-spacing:.02em!important;font-weight:400!important;text-transform:none!important;text-align:inherit;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;grid-column:1/-1;max-width:none}.mp-trail a{color:inherit!important;text-decoration:none!important;font:inherit!important}.mp-trail a:hover{text-decoration:underline!important}.mp-trail .mp-sep{margin:0 .45em}nav>.mp-trail{max-width:1100px;margin:0 auto!important;padding:.45rem 2rem 0!important}</style>
 </head>
 <body>
-<nav><p class="mp-trail" style="color:rgb(255, 255, 255);opacity:0.85"><a href="https://mrsperkinsteacher.github.io/">Mrs Perkins home</a><span class="mp-sep">/</span><a href="https://mrsperkinsteacher.github.io/geography/">Geography Resources</a></p>
-<div class="nav-inner">
-<a class="nav-brand" href="index.html">Stage 5 Geography</a>
-<ul class="nav-links">
-<li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
-<li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
-<li><a href="videos.html">Videos</a></li>
-<li class="has-dropdown">
-<a href="sources.html">Sources</a>
-<div class="dropdown">
-<a href="thisweek.html">This Week in Geography</a>
-<a href="sources.html">Geography Sources</a>
+<div class="wrap">
+<nav class="trail" aria-label="Breadcrumb"><a href="https://mrsperkinsteacher.github.io/">Mrs Perkins home</a><i>/</i><a href="https://mrsperkinsteacher.github.io/geography/">Geography Resources</a><i>/</i><span>The Three Films</span></nav>
+<header class="curtain"><small>THE THREE FILMS LESSON - STEP 1</small><h1>Choose your film</h1><p>Read each description. Pick the one that speaks to you. All three are available on ClickView.</p></header><div class="tickets"><article class="ticket" style="--c:#00645f">
+ <div class="stub"><span>ADMIT ONE</span><b>1</b><span>FILM</span></div>
+ <div class="tbody"><p class="meta">Dir. Damon Gameau &middot; Australia, 2019 &middot; G &middot; 92 min</p><h2>2040</h2><p>Australian filmmaker Damon Gameau had a newborn daughter and was terrified about the world she would inherit. Rather than make a film about how bad things are, he travelled the world to find the solutions that already exist.</p>
+  <div class="moods"><i>Hopeful</i><i>Solutions-focused</i><i>Personal</i><i>Australian</i></div>
+  <div class="sdgline"><small>Best SDG links</small><a href="https://sdgs.un.org/goals/goal7" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-07.jpg" alt="SDG 7 Affordable and Clean Energy" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal11" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-11.jpg" alt="SDG 11 Sustainable Cities and Communities" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal13" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-13.jpg" alt="SDG 13 Climate Action" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal15" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-15.jpg" alt="SDG 15 Life on Land" width="52" height="52" loading="lazy"></a></div>
+  <p class="ask"><b>Ask yourself:</b> Do I want to feel hopeful about what&#x27;s possible?</p>
+  <a class="watch" href="https://clickv.ie/w/bTSC" target="_blank" rel="noopener">Watch on ClickView &#8599;</a></div>
+</article><article class="ticket" style="--c:#892338">
+ <div class="stub"><span>ADMIT ONE</span><b>2</b><span>FILM</span></div>
+ <div class="tbody"><p class="meta">Leonardo DiCaprio &middot; Nat Geo, 2016 &middot; PG &middot; 96 min</p><h2>Before the Flood</h2><p>As a UN Messenger of Peace, DiCaprio travels to the world&#x27;s most climate-affected places - and asks one uncomfortable question: why, despite knowing about climate change for decades, do we keep failing to act?</p>
+  <div class="moods"><i>Urgent</i><i>Political</i><i>Globally-minded</i></div>
+  <div class="sdgline"><small>Best SDG links</small><a href="https://sdgs.un.org/goals/goal7" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-07.jpg" alt="SDG 7 Affordable and Clean Energy" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal13" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-13.jpg" alt="SDG 13 Climate Action" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal15" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-15.jpg" alt="SDG 15 Life on Land" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal17" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-17.jpg" alt="SDG 17 Partnerships for the Goals" width="52" height="52" loading="lazy"></a></div>
+  <p class="ask"><b>Ask yourself:</b> Do I want to understand why change is so hard?</p>
+  <a class="watch" href="https://www.clickview.com.au" target="_blank" rel="noopener">Watch on ClickView &#8599;</a></div>
+</article><article class="ticket" style="--c:#1f6f9c">
+ <div class="stub"><span>ADMIT ONE</span><b>3</b><span>FILM</span></div>
+ <div class="tbody"><p class="meta">Liz Bonnin &middot; BBC One, 2018 &middot; All ages &middot; 60 min</p><h2>Drowning in Plastic</h2><p>Wildlife biologist Liz Bonnin investigates ocean plastic - starting on Lord Howe Island, a UNESCO World Heritage Site just 400km off the NSW coast, where seabirds are dying from plastic they&#x27;ve eaten.</p>
+  <div class="moods"><i>Emotional</i><i>Visually stunning</i><i>Australian connection</i></div>
+  <div class="sdgline"><small>Best SDG links</small><a href="https://sdgs.un.org/goals/goal6" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-06.jpg" alt="SDG 6 Clean Water and Sanitation" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal12" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-12.jpg" alt="SDG 12 Responsible Consumption and Production" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal14" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-14.jpg" alt="SDG 14 Life Below Water" width="52" height="52" loading="lazy"></a><a href="https://sdgs.un.org/goals/goal9" target="_blank" rel="noopener"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-09.jpg" alt="SDG 9 Industry, Innovation and Infrastructure" width="52" height="52" loading="lazy"></a></div>
+  <p class="ask"><b>Ask yourself:</b> Do I want to understand what&#x27;s in our own backyard?</p>
+  <a class="watch" href="https://www.clickview.com.au" target="_blank" rel="noopener">Watch on ClickView &#8599;</a></div>
+</article></div>
+<div class="backrow"><a href="https://mrsperkinsteacher.github.io/geography/">Back to Geography Resources</a><a href="pathways.html">How it all links</a></div>
 </div>
-</li>
-</ul>
-<button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-</div>
-<div class="nav-accent"></div>
-<div class="nav-mobile" id="mobileNav">
-<a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
-<a href="sdgs.html">SDGs</a><a href="videos.html">Videos</a><a href="sources.html">Sources</a><a class="mobile-sub" href="thisweek.html">This Week in Geography</a><a class="mobile-sub" href="sources.html">Geography Sources</a>
-</div>
-</nav>
-<div class="page-hero">
-<div class="page-eyebrow">The Three Films Lesson - Step 1</div>
-<h1 class="page-title">Choose your film</h1>
-<p class="page-lead">Read each description. Pick the one that speaks to you. All three are available on ClickView.</p>
-</div>
-<div class="page-accent"></div>
-<div class="main">
-<div class="film-grid">
-<div class="film-card">
-<div class="film-card-top"><div class="film-number">Film 1</div><div class="film-title">2040</div><div class="film-meta">Dir. Damon Gameau · Australia, 2019 · G · 92 min</div></div>
-<div class="film-accent"></div>
-<div class="film-body">
-<div class="film-desc">Australian filmmaker Damon Gameau had a newborn daughter and was terrified about the world she would inherit. Rather than make a film about how bad things are, he travelled the world to find the solutions that already exist.</div>
-<div class="film-tags"><span class="film-tag">Hopeful</span><span class="film-tag">Solutions-focused</span><span class="film-tag">Personal</span><span class="film-tag">Australian</span></div>
-<div class="film-sdg">Best SDG links: 7 · 11 · 13 · 15</div>
-<div class="film-q">Ask yourself: Do I want to feel hopeful about what's possible?</div>
-<a class="film-btn" href="https://clickv.ie/w/bTSC" target="_blank">Watch on ClickView ↗</a>
-</div>
-</div>
-<div class="film-card">
-<div class="film-card-top"><div class="film-number">Film 2</div><div class="film-title">Before the Flood</div><div class="film-meta">Leonardo DiCaprio · Nat Geo, 2016 · PG · 96 min</div></div>
-<div class="film-accent"></div>
-<div class="film-body">
-<div class="film-desc">As a UN Messenger of Peace, DiCaprio travels to the world's most climate-affected places - and asks one uncomfortable question: why, despite knowing about climate change for decades, do we keep failing to act?</div>
-<div class="film-tags"><span class="film-tag">Urgent</span><span class="film-tag">Political</span><span class="film-tag">Globally-minded</span></div>
-<div class="film-sdg">Best SDG links: 7 · 13 · 15 · 17</div>
-<div class="film-q">Ask yourself: Do I want to understand why change is so hard?</div>
-<a class="film-btn" href="https://www.clickview.com.au" target="_blank">Watch on ClickView ↗</a>
-</div>
-</div>
-<div class="film-card">
-<div class="film-card-top"><div class="film-number">Film 3</div><div class="film-title">Drowning in Plastic</div><div class="film-meta">Liz Bonnin · BBC One, 2018 · All ages · 60 min</div></div>
-<div class="film-accent"></div>
-<div class="film-body">
-<div class="film-desc">Wildlife biologist Liz Bonnin investigates ocean plastic - starting on Lord Howe Island, a UNESCO World Heritage Site just 400km off the NSW coast, where seabirds are dying from plastic they've eaten.</div>
-<div class="film-tags"><span class="film-tag">Emotional</span><span class="film-tag">Visually stunning</span><span class="film-tag">Australian connection</span></div>
-<div class="film-sdg">Best SDG links: 6 · 12 · 14 · 9</div>
-<div class="film-q">Ask yourself: Do I want to understand what's in our own backyard?</div>
-<a class="film-btn" href="https://www.clickview.com.au" target="_blank">Watch on ClickView ↗</a>
-</div>
-</div>
-</div>
-</div>
-<footer><p>Stage 5 Geography · For educational use only</p></footer>
-<script data-goatcounter="https://mrsperkinsgeography.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<footer><p class="enc" id="enc"></p><p>Stage 5 Geography &middot; For educational use only</p><p>SDG icons from the <a href="https://www.un.org/sustainabledevelopment" target="_blank" rel="noopener">United Nations Sustainable Development Goals</a>. The content of this site has not been approved by the United Nations and does not reflect the views of the United Nations or its officials or Member States.</p></footer>
+<script>(function(){var L=["Small steps every lesson add up to big understanding.", "Curious minds make great geographers.", "You do not have to be perfect - just keep going.", "Ask the question. Someone else is wondering too.", "Every map started as a blank page.", "Your effort today is tomorrow's confidence.", "Look closer. Geography is everywhere you go.", "Be kind, work hard, and enjoy the journey.", "Mistakes are proof you are trying.", "Every expert was once a beginner.", "Big questions lead to big discoveries.", "Keep asking why - that is where the learning lives.", "Progress, not perfection.", "You are capable of more than you think.", "Take a breath, then take the next step.", "The world is your classroom.", "Hard work grows strong minds.", "Help someone else understand - you will learn it twice.", "Read the map, then make your own path.", "Today is a great day to learn something new.", "And we know that in all things God works for the good of those who love him. - Romans 8:28", "If you are faithful in little things, you will be faithful in large ones. - Luke 16:10", "Keep on asking, and you will receive what you ask for. Keep on seeking, and you will find. - Matthew 7:7", "For I know the plans I have for you, declares the Lord... plans to give you hope and a future. - Jeremiah 29:11", "Whatever you do, work at it with all your heart. - Colossians 3:23", "The earth is the Lord's, and everything in it. - Psalm 24:1"];var e=document.getElementById("enc");if(e)e.textContent=L[Math.floor(Math.random()*L.length)];})();</script>
+
 </body>
 </html>
