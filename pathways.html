@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it all links - Mrs Perkins Geography</title>
+<meta name="description" content="How Geography links from Stage 4 to the HSC - four rivers of big ideas, the Global Goals, places to explore and the skills you build.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;600;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f7eee9;color:#22303a;font:16px/1.6 Inter,system-ui,sans-serif}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance} p,li{text-wrap:pretty}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.trail{font-size:12px;padding:14px 0 10px;color:#5b6b73} .trail a{text-decoration:none} .trail a:hover{text-decoration:underline} .trail i{margin:0 .45em;font-style:normal}
+/* hero */
+.hero{position:relative;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:repeat(5,1fr);height:560px;box-shadow:0 18px 40px rgba(0,49,70,.18)}
+.hs{background:center/cover;position:relative}
+.hs::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,49,70,.05) 45%,rgba(0,49,70,.82))}
+.hs span{position:absolute;left:0;right:0;bottom:18px;z-index:1;color:#fff;text-align:center;font-size:12px;letter-spacing:.04em}
+.hs b{display:block;font:400 26px/1.1 "DM Serif Display",serif;letter-spacing:0}
+.hero-card{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);background:rgba(247,238,233,.94);backdrop-filter:blur(3px);padding:30px 44px 26px;border-radius:18px;text-align:center;max-width:640px;width:calc(100% - 40px);box-shadow:0 14px 34px rgba(0,0,0,.25)}
+.hero-card .k{margin:0;font-size:12px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:#a07d24}
+.hero-card h1{font:400 clamp(44px,7vw,78px)/1 "DM Serif Display",serif;margin:8px 0 6px;color:#003146}
+.hero-card h1 em{color:#00645f}
+.hero-card p.sub{margin:0;font:700 clamp(22px,3vw,30px)/1.2 Caveat,cursive;color:#892338}
+.hero-arrows{position:absolute;left:0;right:0;top:calc(100% - 96px);display:flex;justify-content:space-around;pointer-events:none}
+/* intro */
+.intro{display:grid;grid-template-columns:1.2fr 1fr;gap:34px;align-items:center;margin:46px auto 18px}
+.intro h2{font:400 38px/1.1 "DM Serif Display",serif;margin:0 0 10px;color:#003146}
+.intro p{margin:0 0 10px;color:#3c4a52}
+.howto{background:#fff;border-radius:16px;padding:18px 22px;border:1px solid #ead9cf}
+.howto h3{margin:0 0 8px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#a07d24}
+.howto ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:14px}
+.howto li{display:flex;gap:10px;align-items:center}
+.k-line{width:34px;height:8px;border-radius:5px;background:#00645f;flex:none}
+.k-st{width:22px;height:22px;border-radius:50%;border:4px solid #d55a1f;background:#fff;flex:none}
+.k-el{width:22px;height:22px;border-radius:50%;border:3px dashed #892338;background:#fff;flex:none}
+.k-sh{width:16px;height:30px;border-radius:9px;border:3px solid #22303a;background:#fff;flex:none;margin:0 3px}
+/* legend + map */
+.legend{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:26px 0 8px}
+.lg{font:600 14px Inter,sans-serif;border:2px solid var(--c);background:#fff;color:#22303a;padding:8px 16px 8px 12px;border-radius:30px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:.2s}
+.lg i{width:22px;height:8px;border-radius:5px;background:var(--c)}
+.lg.on,.lg:hover{background:var(--c);color:#fff} .lg.on i,.lg:hover i{background:#fff}
+.lg-all{border-color:#22303a}
+.mapbox{background:#fffaf6;border-radius:22px;padding:14px 10px 4px;box-shadow:0 10px 30px rgba(0,49,70,.08);overflow-x:auto}
+.map{display:block;width:100%;min-width:900px;height:auto}
+.map .ch{font:800 13px Inter,sans-serif;letter-spacing:.2em;text-anchor:middle;fill:#003146}
+.map .cs{font:400 12px Inter,sans-serif;text-anchor:middle;fill:#5b6b73}
+.map .tn{font:700 21px Caveat,cursive}
+.map .sl{font:600 13px Inter,sans-serif;text-anchor:middle;fill:#22303a}
+.map .sl.s{font-size:11.5px}
+.map .il{font:700 13px Inter,sans-serif;fill:#22303a}
+.map .ix{font:700 15px Caveat,cursive;fill:#a07d24}
+.map .st g{transition:transform .2s} .map .st:hover g{transform-box:fill-box;transform-origin:center}
+.map .st:hover circle{stroke-width:8}
+.map .thr{transition:opacity .3s}
+.map.focus .thr{opacity:.12} .map.focus .thr.on{opacity:1}
+.flow{animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-36}}
+@media (prefers-reduced-motion:reduce){.flow{animation:none}}
+.scrollhint{display:none;text-align:center;font-size:12px;color:#5b6b73;margin:6px 0 0}
+/* threads */
+.threads{margin-top:60px;display:grid;gap:44px}
+.thread{display:grid;grid-template-columns:230px 1fr;gap:0;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 12px 34px rgba(0,49,70,.1);border-top:8px solid var(--c);scroll-margin-top:20px}
+.thread.flip{grid-template-columns:1fr 230px} .thread.flip .art{order:2}
+.art{background:center/cover;min-height:420px;position:relative}
+.art span{position:absolute;left:14px;bottom:14px;background:var(--c);color:#fff;font:700 20px Caveat,cursive;padding:2px 14px;border-radius:20px}
+.tbody{padding:30px 34px 34px}
+.thread .k{margin:0;font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--c)}
+.thread h2{font:400 clamp(32px,4vw,46px)/1.05 "DM Serif Display",serif;margin:4px 0 12px;color:#003146}
+.bq{position:relative;display:inline-block;margin:0 0 22px;font:700 clamp(23px,2.6vw,30px)/1.2 Caveat,cursive;color:#fff;background:var(--c);padding:12px 22px;border-radius:22px 22px 22px 6px;max-width:760px}
+.journey{display:grid;grid-template-columns:repeat(5,1fr);gap:26px;margin-bottom:28px;align-items:stretch}
+.jc{position:relative;display:flex}
+.jc:not(:last-child)::after{content:"";position:absolute;right:-22px;top:34px;border:8px solid transparent;border-left:12px solid var(--c);border-right:0}
+.jc:not(:last-child)::before{content:"";position:absolute;right:-14px;top:40px;width:10px;height:4px;background:var(--c)}
+.stop{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;background:#fff;border:2px solid var(--c);border-radius:18px;padding:10px 8px 12px;text-decoration:none;font-size:13px;font-weight:600;line-height:1.25;transition:transform .15s}
+.stop:hover{transform:translateY(-3px)}
+.stop img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--c)}
+.stop b{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.stop.el{border-style:dashed;background:#fffdf6}
+.elgrp{flex:1;display:flex;flex-direction:column;gap:8px}
+.elgrp .stop{flex-direction:row;text-align:left;padding:6px 10px 6px 6px;border-radius:40px}
+.elgrp .stop img{width:38px;height:38px}
+.burst{position:relative;display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:22px;padding:30px 24px;border-radius:20px;overflow:hidden;isolation:isolate;
+ background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.96) 0 18%,rgba(255,255,255,.55) 60%),repeating-conic-gradient(from 0deg at 50% 50%,color-mix(in srgb,var(--c) 22%,transparent) 0 4deg,transparent 4deg 11deg),#fbf6f2}
+.cl h3{margin:0 0 12px;font:700 26px/1 Caveat,cursive;color:var(--c)}
+.sdgs{display:flex;flex-wrap:wrap;gap:12px}
+.sdg{width:92px;text-decoration:none;text-align:center;transition:transform .2s}
+.sdg:hover{transform:scale(1.08) rotate(-3deg)}
+.sdg b{display:grid;place-items:center;width:70px;height:70px;margin:0 auto 4px;border-radius:50%;background:var(--g);color:#fff;font:400 32px "DM Serif Display",serif;box-shadow:0 0 0 5px #fff,0 6px 14px rgba(0,0,0,.18)}
+.sdg span{display:block;font-size:11px;line-height:1.25;font-weight:600}
+.cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cards li{background:#fff;padding:16px 12px 12px;font-size:13.5px;font-weight:600;line-height:1.3;border-radius:6px;box-shadow:0 6px 14px rgba(0,0,0,.1);transform:rotate(var(--r));position:relative;transition:transform .2s}
+.cards li:hover{transform:rotate(0) scale(1.05);z-index:2}
+.cards li::before{content:"";position:absolute;left:50%;top:-8px;width:52px;height:16px;margin-left:-26px;background:color-mix(in srgb,var(--c) 45%,#fff);opacity:.85;transform:rotate(-3deg)}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:9px}
+.chips li{border:2px dashed var(--c);background:#fff;border-radius:30px;padding:7px 14px;font-size:13.5px;font-weight:600}
+/* skills star */
+.skills{margin:64px 0 0;background:#003146;color:#fff;border-radius:26px;padding:44px 24px 36px;text-align:center;overflow:hidden;position:relative;
+ background-image:repeating-conic-gradient(from 0deg at 50% 52%,rgba(255,194,14,.07) 0 5deg,transparent 5deg 12deg)}
+.skills h2{font:400 clamp(32px,4vw,46px)/1.1 "DM Serif Display",serif;margin:0}
+.skills > p{margin:6px auto 0;max-width:620px;color:#cfe3e8}
+.star{position:relative;width:min(720px,100%);aspect-ratio:1;margin:10px auto 0;list-style:none;padding:0}
+.star::before,.star::after{content:"";position:absolute;left:50%;top:50%;border-radius:50%;transform:translate(-50%,-50%);border:2px dashed rgba(255,255,255,.22)}
+.star::before{width:60%;height:60%} .star::after{width:88%;height:88%}
+.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:28%;aspect-ratio:1;border-radius:50%;background:#ffc20e;color:#003146;display:grid;place-items:center;font:700 clamp(22px,3vw,32px)/1.05 Caveat,cursive;padding:10px;box-shadow:0 0 0 10px rgba(255,194,14,.25),0 0 0 22px rgba(255,194,14,.1);z-index:1}
+.star li{position:absolute;transform:translate(-50%,-50%);font-weight:700;font-size:14px;padding:9px 16px;border-radius:30px;white-space:nowrap;z-index:2}
+.star .core{border-radius:50%;padding:10px;white-space:normal;font:700 clamp(22px,3vw,32px)/1.05 Caveat,cursive;width:26%}
+.star .tool{background:#54acb9;color:#002433}
+.star .con{background:#fff;color:#003146;font:400 19px "DM Serif Display",serif;padding:7px 16px}
+.skills .lab{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;font-size:13px;margin:4px 0 22px}
+.skills .lab span::before{content:"";display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:7px;vertical-align:-2px;background:var(--b)}
+.inq{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin-top:8px}
+.inq span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);padding:7px 14px;border-radius:30px;font-size:14px}
+.inq i{font-style:normal;color:#ffc20e}
+.inq-h{font:700 26px Caveat,cursive;color:#ffc20e;margin:26px 0 4px}
+/* fieldwork */
+.field{margin:44px 0 0;background:#fff;border-radius:22px;padding:28px 30px;box-shadow:0 10px 30px rgba(0,49,70,.08)}
+.field h2{font:400 34px/1.1 "DM Serif Display",serif;margin:0 0 4px;color:#003146}
+.field p{margin:0 0 16px;color:#3c4a52}
+.fw{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.fw::before{content:"";position:absolute;left:8%;right:8%;top:22px;height:5px;background:linear-gradient(90deg,#54acb9,#00645f,#b8912f,#ffc20e);border-radius:4px}
+.fw div{position:relative;text-align:center;padding:0 8px}
+.fw div::before{content:"";display:block;width:44px;height:44px;margin:0 auto 10px;border-radius:50%;background:#fff;border:5px solid #00645f;box-shadow:0 4px 10px rgba(0,0,0,.12)}
+.fw b{display:block;font:400 22px "DM Serif Display",serif;color:#003146}
+.fw span{font-size:13.5px;color:#3c4a52}
+.cta{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:44px 0 10px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:40px;background:#003146;color:#fff}
+.btn.alt{background:#fff;color:#003146;border:2px solid #003146}
+footer{text-align:center;padding:30px 20px 40px;color:#5b6b73;font-size:12px}
+.enc{font:700 30px Caveat,cursive;color:#a07d24;min-height:1.3em;margin:0 0 8px}
+footer a{color:#5b6b73}
+@media(max-width:980px){
+ .hero{height:440px} .intro{grid-template-columns:1fr}
+ .burst{grid-template-columns:1fr}
+ .journey{grid-template-columns:1fr;gap:22px} .jc:not(:last-child)::after{right:auto;left:50%;top:auto;bottom:-20px;margin-left:-8px;border:8px solid transparent;border-top:12px solid var(--c);border-bottom:0} .jc:not(:last-child)::before{display:none} .stop{flex-direction:row;text-align:left}
+ .thread,.thread.flip{grid-template-columns:1fr} .thread.flip .art{order:0}
+ .art{min-height:160px;background-position:center 35%}
+ .scrollhint{display:block}
+ .fw{grid-template-columns:1fr;gap:14px;text-align:left} .fw::before{display:none}
+ .fw div{display:grid;grid-template-columns:44px 1fr;column-gap:14px;text-align:left} .fw div::before{grid-row:span 2;margin:0}
+}
+@media(max-width:700px){
+ .hero{grid-template-columns:repeat(5,1fr);height:380px} .hs b{font-size:15px} .hs span{font-size:0} .hs span b{font-size:15px}
+ .hero-card{padding:20px 18px}
+ .tbody{padding:22px 18px}
+ .cards{grid-template-columns:1fr}
+ .star{aspect-ratio:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding-top:150px}
+ .star::before,.star::after{display:none}
+ .star li{position:static;transform:none}
+ .core{top:75px;width:130px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="trail" aria-label="Breadcrumb"><a href="https://mrsperkinsteacher.github.io/">Mrs Perkins home</a><i>/</i><a href="https://mrsperkinsteacher.github.io/geography/">Geography Resources</a><i>/</i><span>How it all links</span></nav>
+
+<header class="hero">
+ <div class="hs" style="background-image:url(images/river/sr9.webp)"><span><b>Stage 4</b>Years 7-8</span></div><div class="hs" style="background-image:url(images/river/sr29.webp)"><span><b>Stage 5</b>Years 9-10</span></div><div class="hs" style="background-image:url(images/river/sr12.webp)"><span><b>Elective</b>Years 9-10 - an extra choice</span></div><div class="hs" style="background-image:url(images/river/sr47.webp)"><span><b>Year 11</b>Stage 6 - Preliminary</span></div><div class="hs" style="background-image:url(images/river/sr10.webp)"><span><b>Year 12</b>Stage 6 - HSC</span></div>
+ <div class="hero-card">
+  <p class="k">Year 7 to the HSC</p>
+  <h1>How it all <em>links</em></h1>
+  <p class="sub">Every unit flows into the next - follow the rivers.</p>
+ </div>
+</header>
+
+<section class="intro">
+ <div>
+  <h2>One subject, four big rivers</h2>
+  <p>Geography is not a pile of separate topics. The ideas you meet in Year 7 keep flowing - they come back bigger and deeper in Stage 5, the Elective and right through to your HSC.</p>
+  <p>Pick a river below to see where it starts, where it goes, and all the goals, places and skills that branch off it.</p>
+ </div>
+ <div class="howto">
+  <h3>How to read the map</h3>
+  <ul>
+   <li><span class="k-line"></span>Each coloured river is one big idea that grows over the years</li>
+   <li><span class="k-st"></span>Each stop is a unit - click it to open that unit</li>
+   <li><span class="k-el"></span>Dashed stops are Elective units - an extra choice in Years 9-10</li>
+   <li><span class="k-sh"></span>A tall white stop is shared - two rivers meet there</li>
+  </ul>
+ </div>
+</section>
+
+<div class="legend" role="group" aria-label="Show one river">
+ <button type="button" class="lg lg-all on" data-t="all" style="--c:#22303a"><i></i>Show all rivers</button>
+ <button type="button" class="lg" data-t="places" style="--c:#d55a1f"><i></i>Places and people</button><button type="button" class="lg" data-t="connect" style="--c:#892338"><i></i>Connections and a fairer world</button><button type="button" class="lg" data-t="earth" style="--c:#00645f"><i></i>Earth and its landscapes</button><button type="button" class="lg" data-t="water" style="--c:#1f8ea3"><i></i>Water and the living world</button>
+</div>
+<div class="mapbox"><svg class="map" viewBox="0 0 1220 740" role="img" aria-labelledby="mapt mapd" xmlns="http://www.w3.org/2000/svg">
+<title id="mapt">How Geography links from Stage 4 to Year 12</title>
+<desc id="mapd">Four coloured rivers run from Stage 4 through Stage 5, the Elective, Year 11 and Year 12. Each stop is a unit.</desc>
+<defs><clipPath id="cl"><circle cx="0" cy="0" r="33"/></clipPath><clipPath id="cs"><circle cx="0" cy="0" r="24"/></clipPath></defs>
+<rect x="452" y="70" width="236" height="656" rx="22" fill="#fff" fill-opacity=".55" stroke="#b8912f" stroke-width="2" stroke-dasharray="7 7"/>
+<rect x="700" y="70" width="508" height="656" rx="22" fill="#ffc20e" fill-opacity=".09"/>
+<text x="120" y="34" class="ch">STAGE 4</text><text x="120" y="56" class="cs">Years 7-8</text>
+<text x="345" y="34" class="ch">STAGE 5</text><text x="345" y="56" class="cs">Years 9-10</text>
+<text x="570" y="34" class="ch">ELECTIVE</text><text x="570" y="56" class="cs">Years 9-10 - an extra choice</text>
+<text x="805" y="34" class="ch">YEAR 11</text><text x="805" y="56" class="cs">Stage 6 - Preliminary</text>
+<text x="1020" y="34" class="ch">YEAR 12</text><text x="1020" y="56" class="cs">Stage 6 - HSC</text>
+<g class="thr" data-t="places">
+<path d="M 50 180 L 120 180 C 232 158 232 202 345 180 C 458 158 458 202 570 180 C 688 158 688 202 805 180 C 912 158 912 202 1020 180 L 1080 180" fill="none" stroke="#d55a1f" stroke-opacity=".28" stroke-width="20" stroke-linecap="round"/>
+<path d="M 50 180 L 120 180 C 232 158 232 202 345 180 C 458 158 458 202 570 180 C 688 158 688 202 805 180 C 912 158 912 202 1020 180 L 1080 180" fill="none" stroke="#d55a1f" stroke-width="7" stroke-linecap="round"/>
+<path class="flow" d="M 50 180 L 120 180 C 232 158 232 202 345 180 C 458 158 458 202 570 180 C 688 158 688 202 805 180 C 912 158 912 202 1020 180 L 1080 180" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 16"/>
+<text x="50" y="132" class="tn" fill="#d55a1f">Places and people</text>
+</g>
+<g class="thr" data-t="connect">
+<path d="M 50 330 L 120 330 C 232 308 232 352 345 330 C 458 308 458 352 570 330 C 688 308 688 352 805 330 C 912 308 912 352 1020 330 L 1080 330" fill="none" stroke="#892338" stroke-opacity=".28" stroke-width="20" stroke-linecap="round"/>
+<path d="M 50 330 L 120 330 C 232 308 232 352 345 330 C 458 308 458 352 570 330 C 688 308 688 352 805 330 C 912 308 912 352 1020 330 L 1080 330" fill="none" stroke="#892338" stroke-width="7" stroke-linecap="round"/>
+<path class="flow" d="M 50 330 L 120 330 C 232 308 232 352 345 330 C 458 308 458 352 570 330 C 688 308 688 352 805 330 C 912 308 912 352 1020 330 L 1080 330" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 16"/>
+<text x="50" y="282" class="tn" fill="#892338">Connections and a fairer world</text>
+</g>
+<g class="thr" data-t="earth">
+<path d="M 50 480 L 120 480 C 232 458 232 502 345 480 C 458 458 458 502 570 480 C 688 458 688 502 805 480 C 912 458 912 502 1020 480 L 1080 480" fill="none" stroke="#00645f" stroke-opacity=".28" stroke-width="20" stroke-linecap="round"/>
+<path d="M 50 480 L 120 480 C 232 458 232 502 345 480 C 458 458 458 502 570 480 C 688 458 688 502 805 480 C 912 458 912 502 1020 480 L 1080 480" fill="none" stroke="#00645f" stroke-width="7" stroke-linecap="round"/>
+<path class="flow" d="M 50 480 L 120 480 C 232 458 232 502 345 480 C 458 458 458 502 570 480 C 688 458 688 502 805 480 C 912 458 912 502 1020 480 L 1080 480" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 16"/>
+<text x="50" y="432" class="tn" fill="#00645f">Earth and its landscapes</text>
+</g>
+<g class="thr" data-t="water">
+<path d="M 50 630 L 120 630 C 232 608 232 652 345 630 C 458 608 458 652 570 630 C 688 608 688 652 805 630 C 912 608 912 652 1020 630 L 1080 630" fill="none" stroke="#1f8ea3" stroke-opacity=".28" stroke-width="20" stroke-linecap="round"/>
+<path d="M 50 630 L 120 630 C 232 608 232 652 345 630 C 458 608 458 652 570 630 C 688 608 688 652 805 630 C 912 608 912 652 1020 630 L 1080 630" fill="none" stroke="#1f8ea3" stroke-width="7" stroke-linecap="round"/>
+<path class="flow" d="M 50 630 L 120 630 C 232 608 232 652 345 630 C 458 608 458 652 570 630 C 688 608 688 652 805 630 C 912 608 912 652 1020 630 L 1080 630" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 16"/>
+<text x="50" y="582" class="tn" fill="#1f8ea3">Water and the living world</text>
+</g>
+<rect x="763" y="438" width="84" height="234" rx="42" fill="#fff" stroke="#22303a" stroke-width="3"/>
+<a href="https://mrsperkinsteacher.github.io/stage6geo/"><text x="857" y="539" class="il"><tspan x="857" dy="0">Earth&#x27;s</tspan><tspan x="857" dy="16">Natural</tspan><tspan x="857" dy="16">Systems</tspan></text></a>
+<text x="857" y="589" class="ix">shared stop</text>
+<rect x="978" y="438" width="84" height="234" rx="42" fill="#fff" stroke="#22303a" stroke-width="3"/>
+<a href="https://mrsperkinsteacher.github.io/stage6geo/"><text x="1072" y="539" class="il"><tspan x="1072" dy="0">Ecosystems</tspan><tspan x="1072" dy="16">and Global</tspan><tspan x="1072" dy="16">Biodiversity</tspan></text></a>
+<text x="1072" y="589" class="ix">shared stop</text>
+<g class="thr" data-t="places">
+<a class="st" href="https://mrsperkinsteacher.github.io/stage4geo/liveability/" aria-label="Liveability of places"><g transform="translate(120,180)"><circle r="39" fill="#fff" stroke="#d55a1f" stroke-width="5"/><image href="images/path/s4-live.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="120" y="237" class="sl"><tspan x="120" dy="0">Liveability of</tspan><tspan x="120" dy="16">places</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/changingplaces/" aria-label="Changing places"><g transform="translate(345,180)"><circle r="39" fill="#fff" stroke="#d55a1f" stroke-width="5"/><image href="images/path/s5-cp.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="345" y="237" class="sl"><tspan x="345" dy="0">Changing places</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/elective/neighbours/" aria-label="Australia&#x27;s neighbours"><g transform="translate(570,180)"><circle r="30" fill="#fff" stroke="#d55a1f" stroke-width="4" stroke-dasharray="5 4"/><image href="images/path/el-nb.webp" x="-24" y="-24" width="48" height="48" clip-path="url(#cs)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="570" y="228" class="sl s"><tspan x="570" dy="0">Australia&#x27;s</tspan><tspan x="570" dy="14">neighbours</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage6geo/" aria-label="People, Patterns and Processes"><g transform="translate(805,180)"><circle r="39" fill="#fff" stroke="#d55a1f" stroke-width="5"/><image href="images/path/s6-b.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="805" y="237" class="sl"><tspan x="805" dy="0">People, Patterns</tspan><tspan x="805" dy="16">and Processes</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage6geo/" aria-label="Rural and Urban Places"><g transform="translate(1020,180)"><circle r="39" fill="#fff" stroke="#d55a1f" stroke-width="5"/><image href="images/path/s6-b.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="1020" y="237" class="sl"><tspan x="1020" dy="0">Rural and Urban</tspan><tspan x="1020" dy="16">Places</tspan></text>
+</g>
+<g class="thr" data-t="connect">
+<a class="st" href="https://mrsperkinsteacher.github.io/stage4geo/interconnections/" aria-label="Interconnections and trade"><g transform="translate(120,330)"><circle r="39" fill="#fff" stroke="#892338" stroke-width="5"/><image href="images/path/s4-inter.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="120" y="387" class="sl"><tspan x="120" dy="0">Interconnections</tspan><tspan x="120" dy="16">and trade</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/humanwellbeing/" aria-label="Human wellbeing"><g transform="translate(345,330)"><circle r="39" fill="#fff" stroke="#892338" stroke-width="5"/><image href="images/path/s5-hw.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="345" y="387" class="sl"><tspan x="345" dy="0">Human wellbeing</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/elective/globalcitizenship/" aria-label="Global citizenship"><g transform="translate(518,330)"><circle r="30" fill="#fff" stroke="#892338" stroke-width="4" stroke-dasharray="5 4"/><image href="images/path/el-gc.webp" x="-24" y="-24" width="48" height="48" clip-path="url(#cs)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="518" y="378" class="sl s"><tspan x="518" dy="0">Global</tspan><tspan x="518" dy="14">citizenship</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/elective/geopolitics/" aria-label="Geopolitics"><g transform="translate(622,330)"><circle r="30" fill="#fff" stroke="#892338" stroke-width="4" stroke-dasharray="5 4"/><image href="images/path/el-geo.webp" x="-24" y="-24" width="48" height="48" clip-path="url(#cs)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="622" y="378" class="sl s"><tspan x="622" dy="0">Geopolitics</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage6geo/" aria-label="Human-Environment Interactions"><g transform="translate(805,330)"><circle r="39" fill="#fff" stroke="#892338" stroke-width="5"/><image href="images/path/s6-c.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="805" y="387" class="sl"><tspan x="805" dy="0">Human-Environment</tspan><tspan x="805" dy="16">Interactions</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage6geo/" aria-label="Global Sustainability"><g transform="translate(1020,330)"><circle r="39" fill="#fff" stroke="#892338" stroke-width="5"/><image href="images/path/s6-a.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="1020" y="387" class="sl"><tspan x="1020" dy="0">Global</tspan><tspan x="1020" dy="16">Sustainability</tspan></text>
+</g>
+<g class="thr" data-t="earth">
+<a class="st" href="https://mrsperkinsteacher.github.io/stage4geo/revision/landscapes.html" aria-label="Landscapes and landforms"><g transform="translate(120,480)"><circle r="39" fill="#fff" stroke="#00645f" stroke-width="5"/><image href="images/path/s4-land.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="120" y="537" class="sl"><tspan x="120" dy="0">Landscapes and</tspan><tspan x="120" dy="16">landforms</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/" aria-label="Biomes and sustainable agriculture"><g transform="translate(345,480)"><circle r="39" fill="#fff" stroke="#00645f" stroke-width="5"/><image href="images/path/s5-biomes.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="345" y="537" class="sl"><tspan x="345" dy="0">Biomes and</tspan><tspan x="345" dy="16">sustainable</tspan><tspan x="345" dy="16">agriculture</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/elective/extremeenvironments/" aria-label="Extreme environments"><g transform="translate(518,480)"><circle r="30" fill="#fff" stroke="#00645f" stroke-width="4" stroke-dasharray="5 4"/><image href="images/path/el-extreme.webp" x="-24" y="-24" width="48" height="48" clip-path="url(#cs)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="518" y="528" class="sl s"><tspan x="518" dy="0">Extreme</tspan><tspan x="518" dy="14">environments</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/elective/primaryproduction/" aria-label="Primary production"><g transform="translate(622,480)"><circle r="30" fill="#fff" stroke="#00645f" stroke-width="4" stroke-dasharray="5 4"/><image href="images/path/el-pp.webp" x="-24" y="-24" width="48" height="48" clip-path="url(#cs)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="622" y="528" class="sl s"><tspan x="622" dy="0">Primary</tspan><tspan x="622" dy="14">production</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage6geo/" aria-label="Earth&#x27;s Natural Systems"><g transform="translate(805,480)"><circle r="39" fill="#fff" stroke="#00645f" stroke-width="5"/><image href="images/path/s6-a.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage6geo/" aria-label="Ecosystems and Global Biodiversity"><g transform="translate(1020,480)"><circle r="39" fill="#fff" stroke="#00645f" stroke-width="5"/><image href="images/path/s6-c.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a>
+</g>
+<g class="thr" data-t="water">
+<a class="st" href="https://mrsperkinsteacher.github.io/stage4geo/waterintheworld/" aria-label="Water in the world"><g transform="translate(120,630)"><circle r="39" fill="#fff" stroke="#1f8ea3" stroke-width="5"/><image href="images/path/s4-water.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="120" y="687" class="sl"><tspan x="120" dy="0">Water in the</tspan><tspan x="120" dy="16">world</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/emp/" aria-label="Environmental change and management"><g transform="translate(345,630)"><circle r="39" fill="#fff" stroke="#1f8ea3" stroke-width="5"/><image href="images/path/s5-emp.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="345" y="687" class="sl"><tspan x="345" dy="0">Environmental</tspan><tspan x="345" dy="16">change and</tspan><tspan x="345" dy="16">management</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage5geo/elective/oceanography/" aria-label="Oceanography"><g transform="translate(570,630)"><circle r="30" fill="#fff" stroke="#1f8ea3" stroke-width="4" stroke-dasharray="5 4"/><image href="images/path/el-ocean.webp" x="-24" y="-24" width="48" height="48" clip-path="url(#cs)" preserveAspectRatio="xMidYMid slice"/></g></a><text x="570" y="678" class="sl s"><tspan x="570" dy="0">Oceanography</tspan></text>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage6geo/" aria-label="Earth&#x27;s Natural Systems"><g transform="translate(805,630)"><circle r="39" fill="#fff" stroke="#1f8ea3" stroke-width="5"/><image href="images/path/s6-a.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a>
+<a class="st" href="https://mrsperkinsteacher.github.io/stage6geo/" aria-label="Ecosystems and Global Biodiversity"><g transform="translate(1020,630)"><circle r="39" fill="#fff" stroke="#1f8ea3" stroke-width="5"/><image href="images/path/s6-c.webp" x="-33" y="-33" width="66" height="66" clip-path="url(#cl)" preserveAspectRatio="xMidYMid slice"/></g></a>
+</g>
+</svg></div>
+<p class="scrollhint">Swipe sideways to see the whole map</p>
+
+<div class="threads">
+
+<section class="thread" id="places" style="--c:#d55a1f">
+  <div class="art" style="background-image:url(images/river/sr24.webp)"><span>River 1 of 4</span></div>
+  <div class="tbody">
+    <p class="k">Follow the river</p>
+    <h2>Places and people</h2>
+    <p class="bq">What makes a place a good place to live - and who decides how it changes?</p>
+    <div class="journey"><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage4geo/liveability/" style="--c:#d55a1f"><img src="images/path/s4-live.webp" alt=""><span><b>Stage 4</b>Liveability of places</span></a></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage5geo/changingplaces/" style="--c:#d55a1f"><img src="images/path/s5-cp.webp" alt=""><span><b>Stage 5</b>Changing places</span></a></div><div class="jc"><div class="elgrp"><a class="stop el" href="https://mrsperkinsteacher.github.io/stage5geo/elective/neighbours/" style="--c:#d55a1f"><img src="images/path/el-nb.webp" alt=""><span><b>Elective</b>Australia&#x27;s neighbours</span></a></div></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage6geo/" style="--c:#d55a1f"><img src="images/path/s6-b.webp" alt=""><span><b>Year 11</b>People, Patterns and Processes</span></a></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage6geo/" style="--c:#d55a1f"><img src="images/path/s6-b.webp" alt=""><span><b>Year 12</b>Rural and Urban Places</span></a></div></div>
+    <div class="burst">
+      <div class="cl c-sdg"><h3>Global Goals it connects to</h3><div class="sdgs"><a class="sdg" href="https://sdgs.un.org/goals/goal11" target="_blank" rel="noopener" style="--g:#FD9D24"><b>11</b><span>Sustainable Cities and Communities</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal10" target="_blank" rel="noopener" style="--g:#DD1367"><b>10</b><span>Reduced Inequalities</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal9" target="_blank" rel="noopener" style="--g:#FD6925"><b>9</b><span>Industry, Innovation and Infrastructure</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal3" target="_blank" rel="noopener" style="--g:#4C9F38"><b>3</b><span>Good Health and Wellbeing</span></a></div></div>
+      <div class="cl c-exp"><h3>Places to explore</h3><ul class="cards"><li style="--r:-2.5deg">Gosford and the Central Coast growing up</li><li style="--r:1.8deg">Western Sydney&#x27;s new airport city</li><li style="--r:-1.2deg">Melbourne and Vienna - the world&#x27;s most liveable cities?</li><li style="--r:2.4deg">Megacities like Tokyo, Lagos and Jakarta</li><li style="--r:-1.8deg">Our Pacific neighbours - Fiji, PNG and Timor-Leste</li><li style="--r:1.2deg">A country town that is shrinking - or booming</li></ul></div>
+      <div class="cl c-sk"><h3>Skills you build</h3><ul class="chips"><li>Census data (ABS QuickStats)</li><li>Population pyramids</li><li>Land use maps</li><li>Surveys and interviews</li><li>Street-by-street fieldwork</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="thread flip" id="connect" style="--c:#892338">
+  <div class="art" style="background-image:url(images/river/sr20.webp)"><span>River 2 of 4</span></div>
+  <div class="tbody">
+    <p class="k">Follow the river</p>
+    <h2>Connections and a fairer world</h2>
+    <p class="bq">How are we all connected - and how do we make the world fairer?</p>
+    <div class="journey"><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage4geo/interconnections/" style="--c:#892338"><img src="images/path/s4-inter.webp" alt=""><span><b>Stage 4</b>Interconnections and trade</span></a></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage5geo/humanwellbeing/" style="--c:#892338"><img src="images/path/s5-hw.webp" alt=""><span><b>Stage 5</b>Human wellbeing</span></a></div><div class="jc"><div class="elgrp"><a class="stop el" href="https://mrsperkinsteacher.github.io/stage5geo/elective/globalcitizenship/" style="--c:#892338"><img src="images/path/el-gc.webp" alt=""><span><b>Elective</b>Global citizenship</span></a><a class="stop el" href="https://mrsperkinsteacher.github.io/stage5geo/elective/geopolitics/" style="--c:#892338"><img src="images/path/el-geo.webp" alt=""><span><b>Elective</b>Geopolitics</span></a></div></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage6geo/" style="--c:#892338"><img src="images/path/s6-c.webp" alt=""><span><b>Year 11</b>Human-Environment Interactions</span></a></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage6geo/" style="--c:#892338"><img src="images/path/s6-a.webp" alt=""><span><b>Year 12</b>Global Sustainability</span></a></div></div>
+    <div class="burst">
+      <div class="cl c-sdg"><h3>Global Goals it connects to</h3><div class="sdgs"><a class="sdg" href="https://sdgs.un.org/goals/goal1" target="_blank" rel="noopener" style="--g:#E5243B"><b>1</b><span>No Poverty</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal8" target="_blank" rel="noopener" style="--g:#A21942"><b>8</b><span>Decent Work and Economic Growth</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal10" target="_blank" rel="noopener" style="--g:#DD1367"><b>10</b><span>Reduced Inequalities</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal12" target="_blank" rel="noopener" style="--g:#BF8B2E"><b>12</b><span>Responsible Consumption and Production</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal16" target="_blank" rel="noopener" style="--g:#00689D"><b>16</b><span>Peace, Justice and Strong Institutions</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal17" target="_blank" rel="noopener" style="--g:#19486A"><b>17</b><span>Partnerships for the Goals</span></a></div></div>
+      <div class="cl c-exp"><h3>Places to explore</h3><ul class="cards"><li style="--r:-2.5deg">Where your phone is really made</li><li style="--r:1.8deg">Coffee and chocolate - who gets paid?</li><li style="--r:-1.2deg">The Human Development Index around the world</li><li style="--r:2.4deg">Aid and trade across the Pacific</li><li style="--r:-1.8deg">Borders and disputes like the South China Sea</li><li style="--r:1.2deg">Fast fashion - where your old clothes end up</li></ul></div>
+      <div class="cl c-sk"><h3>Skills you build</h3><ul class="chips"><li>Flow maps</li><li>Choropleth maps</li><li>Our World in Data charts</li><li>Comparing development indicators</li><li>Checking sources for bias</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="thread" id="earth" style="--c:#00645f">
+  <div class="art" style="background-image:url(images/river/sr16.webp)"><span>River 3 of 4</span></div>
+  <div class="tbody">
+    <p class="k">Follow the river</p>
+    <h2>Earth and its landscapes</h2>
+    <p class="bq">How does the Earth shape the land - and how do we feed the world from it?</p>
+    <div class="journey"><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage4geo/revision/landscapes.html" style="--c:#00645f"><img src="images/path/s4-land.webp" alt=""><span><b>Stage 4</b>Landscapes and landforms</span></a></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage5geo/" style="--c:#00645f"><img src="images/path/s5-biomes.webp" alt=""><span><b>Stage 5</b>Biomes and sustainable agriculture</span></a></div><div class="jc"><div class="elgrp"><a class="stop el" href="https://mrsperkinsteacher.github.io/stage5geo/elective/extremeenvironments/" style="--c:#00645f"><img src="images/path/el-extreme.webp" alt=""><span><b>Elective</b>Extreme environments</span></a><a class="stop el" href="https://mrsperkinsteacher.github.io/stage5geo/elective/primaryproduction/" style="--c:#00645f"><img src="images/path/el-pp.webp" alt=""><span><b>Elective</b>Primary production</span></a></div></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage6geo/" style="--c:#00645f"><img src="images/path/s6-a.webp" alt=""><span><b>Year 11</b>Earth&#x27;s Natural Systems</span></a></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage6geo/" style="--c:#00645f"><img src="images/path/s6-c.webp" alt=""><span><b>Year 12</b>Ecosystems and Global Biodiversity</span></a></div></div>
+    <div class="burst">
+      <div class="cl c-sdg"><h3>Global Goals it connects to</h3><div class="sdgs"><a class="sdg" href="https://sdgs.un.org/goals/goal2" target="_blank" rel="noopener" style="--g:#DDA63A"><b>2</b><span>Zero Hunger</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal13" target="_blank" rel="noopener" style="--g:#3F7E44"><b>13</b><span>Climate Action</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal15" target="_blank" rel="noopener" style="--g:#56C02B"><b>15</b><span>Life on Land</span></a></div></div>
+      <div class="cl c-exp"><h3>Places to explore</h3><ul class="cards"><li style="--r:-2.5deg">The Blue Mountains - built by wind and water</li><li style="--r:1.8deg">Deserts like the Sahara and Atacama</li><li style="--r:-1.2deg">Antarctica and the polar ice</li><li style="--r:2.4deg">The Pacific Ring of Fire</li><li style="--r:-1.8deg">A working farm near you</li><li style="--r:1.2deg">The Amazon - lungs of the planet</li></ul></div>
+      <div class="cl c-sk"><h3>Skills you build</h3><ul class="chips"><li>Topographic maps and contours</li><li>Cross-sections</li><li>Climate graphs</li><li>Google Earth in 3D</li><li>Field sketches</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="thread flip" id="water" style="--c:#1f8ea3">
+  <div class="art" style="background-image:url(images/river/sr43.webp)"><span>River 4 of 4</span></div>
+  <div class="tbody">
+    <p class="k">Follow the river</p>
+    <h2>Water and the living world</h2>
+    <p class="bq">Who gets the water - and how do we look after rivers, reefs and oceans?</p>
+    <div class="journey"><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage4geo/waterintheworld/" style="--c:#1f8ea3"><img src="images/path/s4-water.webp" alt=""><span><b>Stage 4</b>Water in the world</span></a></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage5geo/emp/" style="--c:#1f8ea3"><img src="images/path/s5-emp.webp" alt=""><span><b>Stage 5</b>Environmental change and management</span></a></div><div class="jc"><div class="elgrp"><a class="stop el" href="https://mrsperkinsteacher.github.io/stage5geo/elective/oceanography/" style="--c:#1f8ea3"><img src="images/path/el-ocean.webp" alt=""><span><b>Elective</b>Oceanography</span></a></div></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage6geo/" style="--c:#1f8ea3"><img src="images/path/s6-a.webp" alt=""><span><b>Year 11</b>Earth&#x27;s Natural Systems</span></a></div><div class="jc"><a class="stop" href="https://mrsperkinsteacher.github.io/stage6geo/" style="--c:#1f8ea3"><img src="images/path/s6-c.webp" alt=""><span><b>Year 12</b>Ecosystems and Global Biodiversity</span></a></div></div>
+    <div class="burst">
+      <div class="cl c-sdg"><h3>Global Goals it connects to</h3><div class="sdgs"><a class="sdg" href="https://sdgs.un.org/goals/goal6" target="_blank" rel="noopener" style="--g:#26BDE2"><b>6</b><span>Clean Water and Sanitation</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal14" target="_blank" rel="noopener" style="--g:#0A97D9"><b>14</b><span>Life Below Water</span></a><a class="sdg" href="https://sdgs.un.org/goals/goal13" target="_blank" rel="noopener" style="--g:#3F7E44"><b>13</b><span>Climate Action</span></a></div></div>
+      <div class="cl c-exp"><h3>Places to explore</h3><ul class="cards"><li style="--r:-2.5deg">The Murray-Darling Basin</li><li style="--r:1.8deg">The Great Barrier Reef</li><li style="--r:-1.2deg">Brisbane Water - our own catchment</li><li style="--r:2.4deg">Plastic in the Pacific Ocean</li><li style="--r:-1.8deg">The Mekong River</li><li style="--r:1.2deg">Rising seas in Tuvalu</li></ul></div>
+      <div class="cl c-sk"><h3>Skills you build</h3><ul class="chips"><li>Catchment maps</li><li>Rainfall and river graphs</li><li>Water quality testing</li><li>Satellite images over time</li><li>Before and after photos</li></ul></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="skills" id="skills">
+ <h2>What you carry the whole way</h2>
+ <p>Every river uses the same geographer's toolkit. You start using these in Year 7 and you are still using them in your HSC exam.</p>
+ <div class="lab"><span style="--b:#54acb9">Tools</span><span style="--b:#fff">Big concepts</span></div>
+ <ul class="star">
+  <li class="core" style="list-style:none">You, the geographer</li>
+  <li class="tool" style="left:67.63%;top:25.73%">Maps</li><li class="tool" style="left:78.53%;top:59.27%">Fieldwork</li><li class="tool" style="left:50.00%;top:80.00%">Graphs and statistics</li><li class="tool" style="left:21.47%;top:59.27%">Spatial technologies</li><li class="tool" style="left:32.37%;top:25.73%">Visual representations</li><li class="con" style="left:69.29%;top:10.45%">Place</li><li class="con" style="left:92.95%;top:40.42%">Space</li><li class="con" style="left:84.26%;top:77.60%">Environment</li><li class="con" style="left:49.78%;top:94.00%">Interconnection</li><li class="con" style="left:15.46%;top:77.26%">Scale</li><li class="con" style="left:7.15%;top:40.00%">Sustainability</li><li class="con" style="left:31.11%;top:10.26%">Change</li>
+ </ul>
+ <p class="inq-h">How every inquiry works</p>
+ <div class="inq"><span>Ask a question</span><i aria-hidden="true">&rarr;</i><span>Collect data</span><i aria-hidden="true">&rarr;</i><span>Analyse it</span><i aria-hidden="true">&rarr;</i><span>Draw conclusions</span><i aria-hidden="true">&rarr;</i><span>Communicate</span><i aria-hidden="true">&rarr;</i><span>Act</span></div>
+</section>
+
+<section class="field">
+ <h2>Get outside - fieldwork every stage</h2>
+ <p>Geography happens outside the classroom too. Fieldwork is part of every stage of the course.</p>
+ <div class="fw"><div><b>Stage 4</b><span>about 10 hours</span></div><div><b>Stage 5</b><span>about 10 hours</span></div><div><b>Elective</b><span>about 10 more hours each stage</span></div><div><b>Year 11</b><span>12 hours</span></div><div><b>Year 12</b><span>12 hours - one school task is based on fieldwork</span></div></div>
+</section>
+
+<div class="cta">
+ <a class="btn" href="syllabus.html">What you study and how you are assessed</a>
+ <a class="btn alt" href="https://mrsperkinsteacher.github.io/geography/">Back to Geography Resources</a>
+</div>
+</div>
+<footer>
+ <p class="enc" id="enc"></p>
+ <p>Mrs Perkins &middot; Geography &middot; For educational use only</p>
+ <p>Artwork: Surreal River, Whimsical Landscapes, Steam Punk Adventure and Rivers of Gold by <a href="https://www.etsy.com/shop/DelightfulDigiArt" target="_blank" rel="noopener">DelightfulDigiArt</a> &middot; World map by <a href="https://www.teacherspayteachers.com/store/cartokoen" target="_blank" rel="noopener">cartoKoen</a></p>
+</footer>
+<script>
+(function(){var L=["Small steps every lesson add up to big understanding.", "Curious minds make great geographers.", "You do not have to be perfect - just keep going.", "Ask the question. Someone else is wondering too.", "Every map started as a blank page.", "Your effort today is tomorrow's confidence.", "Look closer. Geography is everywhere you go.", "Be kind, work hard, and enjoy the journey.", "Mistakes are proof you are trying.", "Every expert was once a beginner.", "Big questions lead to big discoveries.", "Keep asking why - that is where the learning lives.", "Progress, not perfection.", "You are capable of more than you think.", "Take a breath, then take the next step.", "The world is your classroom.", "Hard work grows strong minds.", "Help someone else understand - you will learn it twice.", "Read the map, then make your own path.", "Today is a great day to learn something new.", "And we know that in all things God works for the good of those who love him. - Romans 8:28", "If you are faithful in little things, you will be faithful in large ones. - Luke 16:10", "Keep on asking, and you will receive what you ask for. Keep on seeking, and you will find. - Matthew 7:7", "For I know the plans I have for you, declares the Lord... plans to give you hope and a future. - Jeremiah 29:11", "Whatever you do, work at it with all your heart. - Colossians 3:23", "The earth is the Lord's, and everything in it. - Psalm 24:1"];var e=document.getElementById("enc");if(e)e.textContent=L[Math.floor(Math.random()*L.length)];})();
+(function(){var m=document.querySelector(".map"),b=document.querySelectorAll(".lg");
+b.forEach(function(x){x.addEventListener("click",function(){var t=x.dataset.t;b.forEach(function(y){y.classList.toggle("on",y===x)});
+if(t==="all"){m.classList.remove("focus");m.querySelectorAll(".thr").forEach(function(g){g.classList.remove("on")});return}
+m.classList.add("focus");m.querySelectorAll(".thr").forEach(function(g){g.classList.toggle("on",g.dataset.t===t)});})});})();
+</script>
+</body>
+</html>
